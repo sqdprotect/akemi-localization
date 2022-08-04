@@ -140,7 +140,7 @@
         "mentions_roles": "Упоминание {count, plural, one {# роль} few {# роли} many {# ролей} other {# ролей}}",
         "mentions_users": "Упоминание {count, plural, one {# участник} few {# участника} many {# участников} other {# участников}}",
         "mentions_everyone": "Попытка @\u0435veryone/here упоминаний",
-        "advertisement": "Попытка рекламы Discord сервера",
+        "advertising": "Попытка рекламы Discord сервера",
         "maxlines": "Сообщение содержало {count} новых строк",
         "phishing": "Скам & Фишинг ссылки",
         "referral": "Ссылки перенаправления"

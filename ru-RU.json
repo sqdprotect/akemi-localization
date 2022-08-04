@@ -2,6 +2,26 @@
   "i18n": {
     "note": "Все переводы предоставлены нашим сообществом. Мы не можем гарантировать правильность и качество переводов."
   },
+  "common": {},
+  "commands": {
+    "play": {
+      "query_required": "укажите название трека или url.",
+      "voice_required": "Вы должны находиться в голосовом канале, чтобы использовать эту команду.",
+      "voice_join": "пожалуйста, присоединяйтесь к голосовому каналу {channel}.",
+      "node_is_unavailable": "в настоящее время музыкальный сервер недоступен, обратитесь на сервер поддержки.",
+      "not_allowed_link": "этой ссылки нет в списке разрешенных, укажите другую ссылку.",
+      "searching_tracks": "{emote_loading} Поиск треков...",
+      "search_is_unavailable": "{emote_warn} Этот тип поиска в настоящее время недоступен...\n\n{emote_loading} Поиск похожих треков по вашему запросу...",
+      "search_yandex": "Режим поиска — {emote_yandex} Yandex Music\n\n{emote_warn} Загрузка музыкальных треков в очередь может занять некоторое время...",
+      "search_soundcloud": "Режим поиска {emote_soundcloud} SoundCloud",
+      "track_added": "{emote_platform} Трек {track} добавлен в очередь.",
+      "playlist_added": "{emote_platform} Плейлист {playlist} добавлен в очередь.",
+      "search_result": "{emote_platform} Найдено {tracks, plural, one {# трек} few {# трека} many {# треков} other {# треков}} по вашему запросу.",
+      "successfully_added": "Трек под номером {n} успешно добавлен в очередь сервера.",
+      "no_matches": "{emote_error} {user}, не удалось найти треки по вашему запросу.",
+      "load_failed": "{emote_error} {user}, не удалось загрузить выбранные треки."
+    }
+  },
   "events": {
     "interaction_create": {
       "received": "Это взаимодействие было вызвано другим участником.",
@@ -14,6 +34,12 @@
   },
   "components": {
     "music": {
+      "track": {
+        "no_author": "Информация об авторе недоступна",
+        "no_description": "Описание трека отсутствует",
+        "select_track": "Выбрать трек",
+        "cancel": "Я передумал"
+      },
       "bass": {
         "placeholder": "Изменить уровень басcа",
         "description": "Нажмите, чтобы применить этот эффект",

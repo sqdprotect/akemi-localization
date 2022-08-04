@@ -20,6 +20,64 @@
       "successfully_added": "Трек под номером {n} успешно добавлен в очередь сервера.",
       "no_matches": "{emote_error} {user}, не удалось найти треки по вашему запросу.",
       "load_failed": "{emote_error} {user}, не удалось загрузить выбранные треки."
+    },
+    "queue": {
+      "player_is_idle": "в настоящее время ничего не воспроизводится.",
+      "queue_is_empty": "Очередь пуста.",
+      "current_playback": "Сейчас играет",
+      "total_queue_length": "Продолжительность музыкальной очереди",
+      "total_queue_tracks": "Всего музыкальных произведений",
+      "player_volume": "Громкость плеера",
+      "page": "Страница {currentPage}/{totalPages}",
+      "invalid_number": "номер страницы состоит исключительно из цифр.",
+      "pages_available": "доступно лишь {totalPages, plural, one {# страница} few {# страницы} many {# страниц} other {# страниц}}."
+    },
+    "seek": {
+      "track_is_stream": "невозможно изменить положение воспроизводимого трека, поскольку это прямая трансляция.",
+      "no_args": "введите время в формате `00:20` или просто `0`.",
+      "invalid_format": "неверный формат времени.",
+      "more_time": "время не может быть больше длительности трека."
+    },
+    "reminder": {
+      "reminder": "Напоминание",
+      "empty_list": "у вас нет напоминаний.",
+      "list": {
+        "title": "Напоминания {user}",
+        "description": "Управляйте напоминаниями с помощью выпадающего списка.",
+        "length": "Всего {remindersLength, plural, one {# напоминание} few {# напоминания} many {# напоминаний} other {# напоминаний}}"
+      },
+      "expires": "Истекает {expires}",
+      "send": {
+        "dm": "{emote_dm} Будет доставлено в личные сообщения.",
+        "channel": "{emote_chat} Будет доставлено в канал {channel}."
+      },
+      "reminders_not_found": "Напоминаний не обнаружено. Возможно, они уже были доставлены.",
+      "failed_to_delete": "Не удалось удалить напоминания. Возможно, они уже были доставлены.",
+      "successfully_deleted": "Я удалила {deletedLength, plural, one {# напоминание} few {# напоминания} many {# напоминаний} other {# напоминаний}}.",
+      "successfully_created_reminder_dm": "{emote_alarm} Хорошо, я отправлю вам сообщение по этому поводу {time}.",
+      "successfully_created_reminder_channel": "{emote_alarm} Хорошо, я упомяну вас здесь по этому поводу {time}.",
+      "cancelled_operation": "{emote_error} Операция отменена.",
+      "reached_limit": "вы достигли лимита для создания новых напоминаний.",
+      "invalid_time": "время не определено.",
+      "invalid_time_0s": "время напоминания не может быть меньше 0.",
+      "invalid_time_1y": "время напоминания не должно превышать 1 года.",
+      "select_method_send": "Выберите способ доставки напоминания.",
+      "time": "Время напоминания",
+      "content": "Содержание",
+      "sent_from": "Отправлено с {guildName}",
+      "monitoring": {
+        "button_label": "Команда: {commandName} | Сервисный бот — {botName}"
+      },
+      "methods": {
+        "dm": "Личные сообщения",
+        "channel": "Прямо здесь",
+        "cancel": "Я передумал (-а)"
+      },
+      "description": {
+        "dm": "Отправить напоминание в личные сообщения",
+        "channel": "Отправить напоминание в текущий канал",
+        "cancel": "Отменить и не отправлять напоминание"
+      }
     }
   },
   "events": {
@@ -51,6 +109,19 @@
       "previous": {
         "tracks_not_found": "Предыдущие треки не найдены",
         "back_tracks": "Возврат к предыдущим трекам"
+      }
+    },
+    "reminder": {
+      "placeholder": "Выберите напоминание",
+      "placeholder_method": "Выбрать способ отправки напоминания",
+      "options": {
+        "label": "Напоминание #{n}",
+        "description": "Содержание: {content}"
+      },
+      "actions": {
+        "cancel": "Отменить действие",
+        "info": "Информация",
+        "delete": "Удалить"
       }
     }
   },

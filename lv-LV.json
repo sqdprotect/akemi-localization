@@ -1,0 +1,311 @@
+{
+  "i18n": {
+    "note": "Visus tulkojumus nodrošina mūsu kopiena. Mēs nevaram garantēt tulkojumu precizitāti un kvalitāti."
+  },
+  "common": {
+    "moderator": "Moderators",
+    "reason": "Iemesls",
+    "duration": "Ilgums"
+  },
+  "commands": {
+    "ban": {
+      "help": {
+        "description": "Bloķēt lietotāju",
+        "examples": [
+          {
+            "description": "Bloķēt 2 lietotājus ar iemeslu: Reklāma."
+          },
+          {
+            "description": "Bloķēt lietotāju ar Id 6656666141206868294676 šādu iemeslu dēļ: Apvainojums."
+          }
+        ]
+      },
+      "process": "{emote_loading} Bloķēju...",
+      "targets_not_found": "norādiet lietotājus, kurus vēlaties bloķēt.",
+      "type": "Bloķēšana",
+      "targets": "{count, plural, =1 {Bloķēts lietotājs} other {Bloķētie lietotāji}}",
+      "failed_to_ban": "Neizdevās bloķēt norādītos dalībniekus."
+    },
+    "kick": {
+      "help": {
+        "description": "Izmest lietotāju.",
+        "examples": [
+          {
+            "description": "Izmest lietotāju Monix#6666 дори#6666."
+          },
+          {
+            "description": "Izmest lietotāju ar Id 665661412068294676."
+          }
+        ]
+      },
+      "process": "{emote_loading} Izmetu...",
+      "targets_not_found": "norādiet lietotājus, kurus vēlaties izmest.",
+      "type": "Kick",
+      "targets": "{count, plural, =1 {Izmests lietotājs} other {Izmesti lietotāji}}",
+      "failed_to_kick": "Neizdevās izmest norādītos dalībniekus."
+    },
+    "mute": {
+      "help": {
+        "description": "Uz laiku sodīt dalībnieku.",
+        "examples": [
+          {
+            "description": "Sodīt dalībnieku Monix#666 uz 10 stundām šādu iemeslu dēļ: Spams."
+          },
+          {
+            "description": "Sodīt dalībniekus Monix#6666 дори#6666 uz 10 stundām šādu iemeslu dēļ: Spams."
+          }
+        ]
+      }
+    },
+    "play": {
+      "help": {
+        "description": "Atskaņot dziesmu, izmantojot robotu.",
+        "examples": [
+          {
+            "description": "Atskaņos norādīto dziesmu."
+          }
+        ]
+      },
+      "query_required": "norādiet dziesmas nosaukumu vai url.",
+      "voice_required": "Lai izmantotu šo komandu, jums jābūt balss kanālā.",
+      "voice_join": "lūdzu, pievienojieties balss kanālam {channel}.",
+      "node_is_unavailable": "mūzikas serveris pašlaik nav pieejams, sazinieties ar atbalsta serveri.",
+      "not_allowed_link": "šī saite nav iekļauta atļauto saišu sarakstā, norādiet citu saiti.",
+      "searching_tracks": "{emote_loading} Dziesmas meklēšana...",
+      "search_is_unavailable": "{emote_warn} Šāda veida meklēšana pašlaik nav pieejama...\n\n{emote_loading} Meklēju līdzīgas dziesmas Jūsu pieprasījumā......",
+      "search_yandex": "Meklēšanas režīms — {emote_yandex} Yandex Music\n\n{emote_warn} Mūzikas ieraksts rindā var aizņemt kādu laiku....",
+      "search_soundcloud": "Meklēšanas režīms {emote_soundcloud} SoundCloud",
+      "track_added": "{emote_platform} Dziemsa {track} pievienota rindai.",
+      "playlist_added": "{emote_platform} Dziesmas saraksts {playlist} pievienots rindai.",
+      "search_result": "{emote_platform} Atrasts {tracks, plural, one {# dziesma} few {# dziesmu} many {# dziesmas} other {# dziesmas}} Jūsu pieprasījumā.",
+      "successfully_added": "Dziesmas numurs {n} veiksmīgi pievienots servera rindai.",
+      "no_matches": "{emote_error} {user}, jūsu pieprasījumam atbilstošas dziesmas netika atrastas.",
+      "load_failed": "{emote_error} {user}, neizdevās ielādēt izvēlētās dziesmas."
+    },
+    "queue": {
+      "help": {
+        "description": "Apskatīt pašreizējo servera rindu.",
+        "examples": [
+          {
+            "description": "Tiek rādīta dziesmu rindas 1. lappuse."
+          },
+          {
+            "description": "Tiek rādīta dziesmu rindas 3. lappuse."
+          }
+        ]
+      },
+      "player_is_idle": "pašlaik nekas netiek pavairots.",
+      "queue_is_empty": "Rinda ir tukša.",
+      "current_playback": "Tagad spēlē",
+      "total_queue_length": "Mūzikas rindas ilgums",
+      "total_queue_tracks": "Kopējais skaņdarbu skaits",
+      "player_volume": "Spēlētāja skaļums",
+      "page": "Lappuse {currentPage}/{totalPages}",
+      "invalid_number": "lapas numurs sastāv tikai no cipariem.",
+      "pages_available": "pieejams tikai {totalPages, plural, one {# lapa} few {# lapas} many {# lapas} other {# lapas}}."
+    },
+    "seek": {
+      "help": {
+        "description": "Attīt dziesmu.",
+        "examples": [
+          {
+            "description": "Attīt pašreizējo dziesmu uz pozīciju 2:00."
+          }
+        ]
+      },
+      "track_is_stream": "nav iespējams mainīt atskaņotā skaņdarba pozīciju tiešraidē.",
+      "no_args": "ievadiet laiku formātā `00:20` vai vienkārši `0`.",
+      "invalid_format": "nepareizs laika formāts.",
+      "more_time": "laiks nedrīkst būt garāks par mūzikas garumu."
+    },
+    "reminder": {
+      "reminder": "Atgādinājums",
+      "empty_list": "jums nav atgādinājumu.",
+      "list": {
+        "title": "Atgādinājumi {user}",
+        "description": "Pārvaldiet savus atgādinājumus, izmantojot nolaižamo sarakstu.",
+        "length": "Kopā {remindersLength, plural, one {# atgādinājums} few {# atgādinājumi} many {# atgādinājumi} other {# atgādinājumi}}"
+      },
+      "expires": "Beidzas {expires}",
+      "send": {
+        "dm": "{emote_dm} Tiks piegādātas privāts ziņojums.",
+        "channel": "{emote_chat} Tiks piegādāts uz kanālu {channel}."
+      },
+      "reminders_not_found": "Netika atrasti nekādi atgādinājumi. Iespējams, tie jau ir piegādāti.",
+      "failed_to_delete": "Atgādinājumus nevarēja dzēst. Iespējams, tie jau ir piegādāti.",
+      "successfully_deleted": "Es dzēsu {deletedLength, plural, one {# atgādinājums} few {# atgādinājumi} many {# atgādinājumi} other {# atgādinājumi}}.",
+      "successfully_created_reminder_dm": "{emote_alarm} Labi, es jums par to nosūtīšu vēstuli. {time}.",
+      "successfully_created_reminder_channel": "{emote_alarm} Labi, es tevi pieminēšu šeit par to {time}.",
+      "cancelled_operation": "{emote_error} Operācija tika atcelta.",
+      "reached_limit": "jūs esat sasniedzis jaunu atgādinājumu izveides limitu.",
+      "invalid_time": "laiks nav noteikts.",
+      "invalid_time_0s": "atgādinājuma laiks nevar būt mazāks par 0.",
+      "invalid_time_1y": "atgādinājuma termiņam nevar pārsniegt 1 gadu.",
+      "select_method_send": "Izvēlaties, kā atgādinājums tiks piegādāts.",
+      "time": "Atgādinājuma laiks",
+      "content": "Saturs",
+      "sent_from": "Nosūtīts no {guildName}",
+      "monitoring": {
+        "button_label": "Komanda: {commandName} | Servisa robots — {botName}"
+      },
+      "methods": {
+        "dm": "Privātas ziņas",
+        "channel": "Tieši šeit",
+        "cancel": "Esmu pārdomājis"
+      },
+      "description": {
+        "dm": "Nosūtīt atgādinājumu privātos ziņojumos",
+        "channel": "Atgādinājuma nosūtīšana uz pašreizējo kanālu",
+        "cancel": "Atcelt un nesūtīt atgādinājumu"
+      }
+    }
+  },
+  "events": {
+    "interaction_create": {
+      "received": "Šo mijiedarbību izveidoja cits dalībnieks.",
+      "expired": "Šī mijiedarbība vairs nav pieejama, jo tās derīguma termiņš ir beidzies. Ja nepieciešams, izsauciet šo komandu vēlreiz.",
+      "failed": {
+        "title": "Mijiedarbības kļūda",
+        "message": "Šī mijiedarbība ir radījusi kļūdu, operāciju nevar turpināt. Ja problēma turpinās, sazinieties ar atbalsta serveri."
+      }
+    }
+  },
+  "components": {
+    "music": {
+      "track": {
+        "no_author": "Informācija par autoru nav pieejama",
+        "no_description": "Dziesmas apraksta nav",
+        "select_track": "Izvēlieties dziesmu",
+        "cancel": "Esmu pārdomājis"
+      },
+      "bass": {
+        "placeholder": "Mainīt basa līmeni",
+        "description": "Nospiediet, lai piemērotu šo efektu",
+        "reset": "Atiestatit",
+        "low": "Zems",
+        "medium": "Vidējais",
+        "high": "Augsts"
+      },
+      "previous": {
+        "tracks_not_found": "Iepriekšējās dziesmas nav atrastas",
+        "back_tracks": "Atgriešanās pie iepriekšējām dziesmām"
+      }
+    },
+    "reminder": {
+      "placeholder": "Izvēlieties atgādinājumu",
+      "placeholder_method": "Izvēlieties, kā nosūtīt atgādinājumu",
+      "options": {
+        "label": "Atgādinājums #{n}",
+        "description": "Saturs: {content}"
+      },
+      "actions": {
+        "cancel": "Atcelt darbību",
+        "info": "Informācija",
+        "delete": "Dzēst"
+      }
+    }
+  },
+  "services": {
+    "automod": {
+      "spamming": "lūdzu, nesūtiet surogātpastu.",
+      "zalgo": "šis serveris neļauj sūtīt zalgo simboli..",
+      "advertising": "Discord ielūgumi šajā serverī nav atļauti.",
+      "phishing": "šajā serverī nav atļauts izmantot pikšķerēšanas saites.",
+      "referral": "šajā serverī nav atļautas pāradresācijas saites.",
+      "image_filter": "Šis kanāls ir paredzēts tikai attēlu sūtīšanai! Pārējais saturs tiek automātiski dzēsts.",
+      "reasons": {
+        "spamming": "Identisku ziņojumu pārpludināšana",
+        "zalgo": "Zalgo simboli",
+        "emoji": "Surogātpasta emocijzīmes ({emojiPerMessage}/{emojiPerMessageAllowed})",
+        "mentions_roles": "Pieminēšana {count, plural, one {# loma} few {# lomas} many {# lomas} other {# lomas}}",
+        "mentions_users": "Pieminēšana {count, plural, one {# lietotājs} few {# lietotāji} many {# lietotāju} other {# lietotāju}}",
+        "mentions_everyone": "Mēģinājums @\u0435veryone/here minēšana",
+        "advertising": "Mēģinājums reklamēt Discord serveri",
+        "maxlines": "Ziņojumā bija {count} jaunu rindu",
+        "phishing": "Krāpšanas & pikšķerēšanas saites",
+        "referral": "Virziena saites"
+      }
+    },
+    "music": {
+      "common": {
+        "voice_required": "Lūdzu, pievienojieties balss kanālam {kanāls}, lai lietot mūzikas atskaņotāju.",
+        "unknown_requester": "Nezināms lietotājs"
+      },
+      "errors": {
+        "aborted": {
+          "title": "Dziesmas atskaņošana pārtraukta",
+          "description": "Savienojums tika pārtraukts, jo es biju atvienota no balss kanāla vai dziesmas atskaņošanas laikā notika kļūda."
+        },
+        "load_failed": {
+          "title": "Dziesmu ielādēšanas kļūda",
+          "description": "Man neizdevās atskaņot šo dziesmu nezināmas kļūdas dēļ."
+        },
+        "long_waiting": {
+          "title": "Pārtraukts",
+          "description": "Es izgāju no balss kanāla, jo bija gara pauze."
+        },
+        "force_stopped": {
+          "title": "Pārtraukts",
+          "description": "{user} apstādināja servera rindu"
+        },
+        "no_tracks": {
+          "title": "Tukša servera rinda",
+          "description": "Es izgāju no balss kanāla, jo rindā nav dziesmu."
+        },
+        "resume": {
+          "title": "Kļūdas atsākšana",
+          "description": "Es nevarēju izveidot savienojumu ar balss kanālu, dziesmu rinda tika izdzēsta."
+        }
+      },
+      "statuses": {
+        "ended": "Klausījās",
+        "skipped": "Trūkst",
+        "stopped": "Pārtraukta",
+        "error": "Kļūda"
+      },
+      "playlist_saved": {
+        "title": "Saglabāts dziesmu saraksts",
+        "description": "Varat izmantot [link]({url}), lai pēc atkārtota pieprasījuma atsāktu dziesmu rindu."
+      },
+      "bass": {
+        "success": "Veiksmīgi",
+        "message": "Basa līmenis ir veiksmīgi iestatīts un pēc dažām sekundēm tiks piemērots pašreizējai rindai.",
+        "impact": "Iedarbības līmenis"
+      },
+      "re_sync": {
+        "title": "Atkārtota sinhronizēšana...",
+        "load_balancer": "Neuztraucieties, mēs atjaunosim jūsu darbību!\nSlodzes līdzsvarošanas process var aizņemt kādu laiku.",
+        "reconnecting": {
+          "description": "Kaut kas ir noticis nepareizi. Mēģinājums atjaunot iepriekšējo savienojumu",
+          "success": "Savienojums atjaunots",
+          "message_resume": "Saziņa tūlīt tiks atjaunota."
+        }
+      },
+      "restoration": {
+        "title": "Dziesmu atjaunošana pēc negaidītas robota restartēšanas",
+        "description": "Neuztraucieties, tagad mēs to visu atkal sakārtosim! Šis process var aizņemt kādu laiku."
+      },
+      "server_queue": "Servera rinda {guildName}",
+      "session": "Sesija {sessionId}",
+      "playlist": "Atskaņošanas saraksts",
+      "status": "Statuss",
+      "requester": "Pieprasījums no: {requester}",
+      "stream": "Tiešraide",
+      "load": "Slodze: {cpu}%",
+      "playing_players": "Balss savienojumi: {players}",
+      "volume": "Skaļums",
+      "repeat_mode": {
+        "common": "Atkārtošanas režīms",
+        "track": "Pašreizējā dziesma",
+        "queue": "Rinda"
+      },
+      "next_tracks": "Tālāk norādītās dziesmas",
+      "total_duration": "Kopējais ilgums: {duration}",
+      "total_queue": "Kopējais dziesmu skaits rindā: {length}",
+      "maintenance": {
+        "title": "Atjauninājuma lejupielādešana...",
+        "message": "Pašlaik robots atrodas uzturēšanas režīmā, tiek lejupielādēts atjauninājums. Savienojums uz dažām sekundēm var tikt pārtraukts."
+      }
+    }
+  }
+}

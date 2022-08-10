@@ -433,7 +433,7 @@
         "emoji": "Спам эмодзи ({emojiPerMessage}/{emojiPerMessageAllowed})",
         "mentions_roles": "Упоминание {count, plural, one {# роль} few {# роли} many {# ролей} other {# ролей}}",
         "mentions_users": "Упоминание {count, plural, one {# участник} few {# участника} many {# участников} other {# участников}}",
-        "mentions_everyone": "Попытка @еveryone/here упоминаний",
+        "mentions_everyone": "Попытка еveryone/here упоминаний",
         "advertising": "Попытка рекламы Discord сервера",
         "maxlines": "Сообщение содержало {count} новых строк",
         "phishing": "Скам & Фишинг ссылки",

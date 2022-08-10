@@ -433,7 +433,7 @@
         "emoji": "Surogātpasta emocijzīmes ({emojiPerMessage}/{emojiPerMessageAllowed})",
         "mentions_roles": "Pieminēšana {count, plural, one {# loma} few {# lomas} many {# lomas} other {# lomas}}",
         "mentions_users": "Pieminēšana {count, plural, one {# lietotājs} few {# lietotāji} many {# lietotāju} other {# lietotāju}}",
-        "mentions_everyone": "Mēģinājums @еveryone/here minēšana",
+        "mentions_everyone": "Mēģinājums еveryone/here minēšana",
         "advertising": "Mēģinājums reklamēt Discord serveri",
         "maxlines": "Ziņojumā bija {count} jaunu rindu",
         "phishing": "Krāpšanas & pikšķerēšanas saites",
@@ -521,8 +521,5 @@
         "message": "Pašlaik robots atrodas uzturēšanas režīmā, tiek lejupielādēts atjauninājums. Savienojums uz dažām sekundēm var tikt pārtraukts."
       }
     }
-  },
-  "test": {
-    "fsdf": "fdsfsd"
   }
 }

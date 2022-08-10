@@ -5,9 +5,198 @@
   "common": {
     "moderator": "Moderators",
     "reason": "Iemesls",
-    "duration": "Ilgums"
+    "duration": "Ilgums",
+    "requester": "Запрос от {user}"
   },
   "commands": {
+    "skynet": {
+      "help": {
+        "description": "Сочинить историю при помощи нейросети."
+      },
+      "content_not_found": "как я могу сочинить историю без твоего крутого текста?",
+      "to_many_symbols": "слишком много символов...",
+      "process": "{emote_loading} Сочиняю историю...",
+      "failed_to_request": "Нейросеть не отвечает, повторите попытку еще раз.",
+      "porfirevich": "Порфирьевич",
+      "by_porfirevich": "Написано с помощью нейронной сети: {link}"
+    },
+    "avatar": {
+      "help": {
+        "description": "Посмотреть аватар участника.",
+        "examples": [
+          {
+            "description": "Отобразит аватар участника, который запросил команду."
+          },
+          {
+            "description": "Отобразит аватар участника Monix."
+          }
+        ]
+      },
+      "server_avatar": "{emote_slash} Встраивание также отображает основной аватар участника, поскольку изменены параметры профиля сервера."
+    },
+    "bonus": {},
+    "help": {
+      "help": {
+        "description": "Посмотреть список доступных команд.",
+        "examples": [
+          {
+            "description": "Отобразит список доступных команд."
+          },
+          {
+            "description": "Отобразит информацию о команде ban."
+          }
+        ]
+      },
+      "information": "Информация",
+      "command_not_found": "не удалось найти такую команду.",
+      "command_info": "Информация о команде {commandName}",
+      "full_description": "Полное описание",
+      "aliases": "Псевдонимы `{aliases}`",
+      "rate_limit_time": "Время перезарядки: `{time}`",
+      "usage": "Использование: `{usage}`",
+      "permissions": {
+        "bot": "Права бота",
+        "user": "Права участника"
+      },
+      "example": "Пример: №{n}",
+      "moderate": {
+        "title": "{emote_warn} Команда из раздела модерации",
+        "description": "Это команда модерации, доступная участникам сервера при определенных условиях."
+      },
+      "premium": {
+        "title": "{emote_boost} Команда для премиум серверов",
+        "description": "Чтобы использовать эту команду, на сервере должен быть активный пакет Akemi PRO."
+      },
+      "command_available_list": "Список доступных команд",
+      "categories": [
+        "Административные",
+        "Основные",
+        "Модерация",
+        "Настройка",
+        "Экономика",
+        "Развлечения",
+        "Музыка",
+        "Взаимодействия",
+        "Утилиты"
+      ]
+    },
+    "invite": {
+      "help": {
+        "description": "Получить ссылку-приглашение Akemi."
+      },
+      "description": "Akemi — это многофункциональный бот, предназначенный для улучшения и защиты вашего сервера Discord.\n\nНе стесняйтесь задавать вопросы на нашем официальном сервере. Мы всегда готовы найти решение вашей проблемы!",
+      "monitoring": "{emote_partner} Мониторинги",
+      "developer": "{emote_dev} Разработчики"
+    },
+    "invites": {
+      "help": {
+        "description": "Посмотреть статистику отслеживаемых приглашений.",
+        "examples": [
+          {
+            "description": "Отобразит статистику приглашений участника Monix."
+          }
+        ]
+      },
+      "not_found": "не удалось получить статистику приглашений.",
+      "invites_by": "Приглашения {user}",
+      "invites_total": "Имеет {invites, plural, one {# уникальное приглашение} few {# уникальных приглашения} many {# уникальных приглашений} other {# уникальных приглашений}}",
+      "statistic": "Статистика",
+      "join": "{emote_join} {tracked, plural, one {# вход} few {# входа} many {# входов} other {# входов}}",
+      "left": "{emote_left} {left, plural, one {# выход} few {# выхода} many {# выходов} other {# выходов}}",
+      "leave": "{emote_leave} {fake, plural, one {# фейк} few {# фейка} many {# фейков} other {# фейков}}"
+    },
+    "ping": {
+      "help": {
+        "description": "Узнать текущую задержку бота."
+      },
+      "calculating": "{emote_loading} Вычисление...",
+      "cluster": "Кластер: **{instanceName}** ({id}/{total})",
+      "shards": "Сегменты: [ {shard_list} ]",
+      "latency": "— Задержка: {latency}ms",
+      "command_reply": "— Обработка команд: {latency}ms",
+      "database": "— База данных: {latency}ms"
+    },
+    "remaining": {
+      "help": {
+        "description": "Узнать, сколько осталось до следующего апа/бампа."
+      },
+      "module_disabled": "на этом сервере не активирован модуль напоминаний.",
+      "title": "Напоминания",
+      "process": "{emote_loading} Получение информации...",
+      "no_data": "Нет данных.",
+      "its_time": "Пора бампать!",
+      "not_found": "{emote_error} Не удалось получить данные ни об одном боте или напоминании."
+    },
+    "server-info": {
+      "help": {
+        "description": "Информация о сервере."
+      },
+      "verification_levels": {
+        "0": "Отсутствует",
+        "1": "Низкий",
+        "2": "Средний",
+        "3": "Высокий",
+        "4": "Самый высокий"
+      },
+      "channels": {
+        "text": "{emote_text} Текстовые каналы: {count}",
+        "voice": "{emote_voice} Голосовые каналы: {count}",
+        "stage": "{emote_stage} Трибуны: {count}",
+        "announce": "{emote_announce} Новостные каналы: {count}",
+        "category": "{emote_category} Категории: {count}"
+      },
+      "owner": "{emote_owner} Создатель: {user}",
+      "verification_level": "{emote_verified} Уровень проверки: {level}",
+      "created": "{emote_paint} Создан: {createdAt}",
+      "total_channels": "{emote_text} Всего {count, plural, one {# канал} few {# канала} many {# каналов} other {# каналов}}",
+      "boost": "Бусты",
+      "boost_level": "{emote_boost} Уровень: **{level}** (бустов — {count})",
+      "main": "Основное",
+      "users": {
+        "title": "Пользователи",
+        "total": "{emote_member} Всего {count, plural, one {# пользователь} few {# пользователя} many {# пользователей} other {# пользователей}}",
+        "bots": "Ботов: {count}",
+        "members": "Участников: {count}"
+      },
+      "bonus": {
+        "title": "{emote_boost} Бонусы",
+        "description": "На сервере активирован пакет **AkemiPRO**.\nСпасибо за поддержку ❤️"
+      },
+      "up": {
+        "help": {
+          "description": "Оценить сервер на BotiCord."
+        },
+        "title": "Сервер на Boticord",
+        "failed_to_request": "Что-то пошло не так! Попробуйте еще раз чуть позже."
+      }
+    },
+    "user-info": {
+      "help": {
+        "description": "Посмотреть информацию об участнике.",
+        "examples": [
+          {
+            "description": "Отобразит информацию об участнике, который вызвал команду."
+          },
+          {
+            "description": "Отобразит информацию об участнике Monix#6666."
+          }
+        ]
+      },
+      "no_roles": "Нет ролей.",
+      "member_not_found": "участник не найден.",
+      "public": "Публичный: {boolean}",
+      "app_tags": "Теги: {tags}",
+      "intents": "Привилегированные намерения:",
+      "member_voice": "{emote_voice} Находится в голосовом канале: {channel}",
+      "timeout_end": "{emote_timeout} Конец наказания: {end}",
+      "server_avatar": "{emote_slash} Встраивание также отображает основной аватар участника, поскольку изменены параметры профиля сервера",
+      "invited": "Пригласили",
+      "joined": "Присоединился",
+      "created": "Аккаунт создан",
+      "more_info": "Дополнительная информация",
+      "roles": "Роли",
+      "avatar": "Серверный аватар"
+    },
     "ban": {
       "help": {
         "description": "Bloķēt lietotāju",
@@ -55,7 +244,14 @@
             "description": "Sodīt dalībniekus Monix#6666 дори#6666 uz 10 stundām šādu iemeslu dēļ: Spams."
           }
         ]
-      }
+      },
+      "process": "{emote_loading} Наказываю...",
+      "targets_not_found": "укажите участников, которых вы хотите наказать.",
+      "invalid_timeout": "указано некорректное время наказания.",
+      "type": "Наказание",
+      "updated": "Обновлено",
+      "targets": "{count, plural, =1 {Наказанный участник} other {Наказанные участники}}",
+      "failed_to_mute": "Не удалось наказать указанных участников."
     },
     "play": {
       "help": {
@@ -171,6 +367,24 @@
     }
   },
   "components": {
+    "skynet": {
+      "add": "Дополнить",
+      "regenerate": "Повторная генерация",
+      "stop_generate": "Остановить генерацию"
+    },
+    "help": {
+      "select_category": "Выберите категорию"
+    },
+    "invite": {
+      "invite_bot": "Пригласить бота",
+      "site": "Сайт",
+      "support_server": "Сервер поддержки"
+    },
+    "user-info": {
+      "terms_of_service": "Условия пользования",
+      "privacy_policy": "Политика конфиденциальности",
+      "add_bot": "Добавить бота"
+    },
     "music": {
       "track": {
         "no_author": "Informācija par autoru nav pieejama",
@@ -219,7 +433,7 @@
         "emoji": "Surogātpasta emocijzīmes ({emojiPerMessage}/{emojiPerMessageAllowed})",
         "mentions_roles": "Pieminēšana {count, plural, one {# loma} few {# lomas} many {# lomas} other {# lomas}}",
         "mentions_users": "Pieminēšana {count, plural, one {# lietotājs} few {# lietotāji} many {# lietotāju} other {# lietotāju}}",
-        "mentions_everyone": "Mēģinājums @\u0435veryone/here minēšana",
+        "mentions_everyone": "Mēģinājums @еveryone/here minēšana",
         "advertising": "Mēģinājums reklamēt Discord serveri",
         "maxlines": "Ziņojumā bija {count} jaunu rindu",
         "phishing": "Krāpšanas & pikšķerēšanas saites",
@@ -307,5 +521,8 @@
         "message": "Pašlaik robots atrodas uzturēšanas režīmā, tiek lejupielādēts atjauninājums. Savienojums uz dažām sekundēm var tikt pārtraukts."
       }
     }
+  },
+  "test": {
+    "fsdf": "fdsfsd"
   }
 }

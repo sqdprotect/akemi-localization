@@ -161,14 +161,14 @@
       "bonus": {
         "title": "{emote_boost} Bonusi",
         "description": "Serverī ir aktivizēta **AkemiPRO** pakete.\nPaldies par atbalstu ❤️"
-      },
-      "up": {
-        "help": {
-          "description": "Novērtējiet serveri uz BotiCord."
-        },
-        "title": "Serveris uz Boticord",
-        "failed_to_request": "Kaut kas ir noticis nepareizi! Pamēģiniet vēlreiz nedaudz vēlāk."
       }
+    },
+    "up": {
+      "help": {
+        "description": "Novērtējiet serveri uz BotiCord."
+      },
+      "title": "Serveris uz Boticord",
+      "failed_to_request": "Kaut kas ir noticis nepareizi! Pamēģiniet vēlreiz nedaudz vēlāk."
     },
     "user-info": {
       "help": {
@@ -442,7 +442,7 @@
     },
     "music": {
       "common": {
-        "voice_required": "Lūdzu, pievienojieties balss kanālam {kanāls}, lai lietot mūzikas atskaņotāju.",
+        "voice_required": "Lūdzu, pievienojieties balss kanālam {channel}, lai lietot mūzikas atskaņotāju.",
         "unknown_requester": "Nezināms lietotājs"
       },
       "errors": {

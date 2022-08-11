@@ -161,14 +161,14 @@
       "bonus": {
         "title": "{emote_boost} Бонусы",
         "description": "На сервере активирован пакет **AkemiPRO**.\nСпасибо за поддержку ❤️"
-      },
-      "up": {
-        "help": {
-          "description": "Оценить сервер на BotiCord."
-        },
-        "title": "Сервер на Boticord",
-        "failed_to_request": "Что-то пошло не так! Попробуйте еще раз чуть позже."
       }
+    },
+    "up": {
+      "help": {
+        "description": "Оценить сервер на BotiCord."
+      },
+      "title": "Сервер на Boticord",
+      "failed_to_request": "Что-то пошло не так! Попробуйте еще раз чуть позже."
     },
     "user-info": {
       "help": {

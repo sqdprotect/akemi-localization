@@ -6,196 +6,196 @@
     "moderator": "Moderators",
     "reason": "Iemesls",
     "duration": "Ilgums",
-    "requester": "Запрос от {user}"
+    "requester": "Pieprasījums no {user}"
   },
   "commands": {
     "skynet": {
       "help": {
-        "description": "Сочинить историю при помощи нейросети."
+        "description": "Izdomāt stāstu ar neironu tīkla palīdzību."
       },
-      "content_not_found": "как я могу сочинить историю без твоего крутого текста?",
-      "to_many_symbols": "слишком много символов...",
-      "process": "{emote_loading} Сочиняю историю...",
-      "failed_to_request": "Нейросеть не отвечает, повторите попытку еще раз.",
-      "porfirevich": "Порфирьевич",
-      "by_porfirevich": "Написано с помощью нейронной сети: {link}"
+      "content_not_found": "kā es varu izdomāt stāstu bez tava foršā teksta?",
+      "to_many_symbols": "pārāk daudz simbolu...",
+      "process": "{emote_loading} Es veidoju stāstu...",
+      "failed_to_request": "Neironu tīkls neatbild, mēģiniet vēlreiz.",
+      "porfirevich": "Porfirjevičs",
+      "by_porfirevich": "Uzrakstīts ar neironu tīkla palīdzību: {link}"
     },
     "avatar": {
       "help": {
-        "description": "Посмотреть аватар участника.",
+        "description": "Apskatīt lietotāja avatāru.",
         "examples": [
           {
-            "description": "Отобразит аватар участника, который запросил команду."
+            "description": "Tiek parādīts tā lietotāja avatārs, kurš pieprasījis komandu."
           },
           {
-            "description": "Отобразит аватар участника Monix."
+            "description": "Tiek parādīts lietotāja Monix avatārs."
           }
         ]
       },
-      "server_avatar": "{emote_slash} Встраивание также отображает основной аватар участника, поскольку изменены параметры профиля сервера."
+      "server_avatar": "{emote_slash} Embeda tiek parādīts arī dalībnieka galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi."
     },
     "bonus": {},
     "help": {
       "help": {
-        "description": "Посмотреть список доступных команд.",
+        "description": "Skatīt pieejamo komandu sarakstu.",
         "examples": [
           {
-            "description": "Отобразит список доступных команд."
+            "description": "Tiek parādīts pieejamo komandu saraksts."
           },
           {
-            "description": "Отобразит информацию о команде ban."
+            "description": "Tiek parādīta informācija par komandu ban."
           }
         ]
       },
-      "information": "Информация",
-      "command_not_found": "не удалось найти такую команду.",
-      "command_info": "Информация о команде {commandName}",
-      "full_description": "Полное описание",
-      "aliases": "Псевдонимы `{aliases}`",
-      "rate_limit_time": "Время перезарядки: `{time}`",
-      "usage": "Использование: `{usage}`",
+      "information": "Informācija",
+      "command_not_found": "šādu komandu neizdevās atrast.",
+      "command_info": "Informācija par komandu {commandName}",
+      "full_description": "Pilns apraksts",
+      "aliases": "Aliases `{aliases}`",
+      "rate_limit_time": "Pārlādēšanas laiks: `{time}`",
+      "usage": "Lietošana: `{usage}`",
       "permissions": {
-        "bot": "Права бота",
-        "user": "Права участника"
+        "bot": "Robota tiesības",
+        "user": "Lietotāja tiesības"
       },
-      "example": "Пример: №{n}",
+      "example": "Piemērs: №{n}",
       "moderate": {
-        "title": "{emote_warn} Команда из раздела модерации",
-        "description": "Это команда модерации, доступная участникам сервера при определенных условиях."
+        "title": "{emote_warn} Komanda no moderācijas sadaļas",
+        "description": "Šī ir moderēšanas komanda, kas servera dalībniekiem ir pieejama ar noteiktiem nosacījumiem."
       },
       "premium": {
-        "title": "{emote_boost} Команда для премиум серверов",
-        "description": "Чтобы использовать эту команду, на сервере должен быть активный пакет Akemi PRO."
+        "title": "{emote_boost} Komanda premium serveriem",
+        "description": "Lai izmantotu šo komandu, serverī jābūt aktivizētai Akemi PRO paketei."
       },
-      "command_available_list": "Список доступных команд",
+      "command_available_list": "Pieejamo komandu saraksts",
       "categories": [
-        "Административные",
-        "Основные",
-        "Модерация",
-        "Настройка",
-        "Экономика",
-        "Развлечения",
-        "Музыка",
-        "Взаимодействия",
-        "Утилиты"
+        "Administrātīvie",
+        "Galvenais",
+        "Moderācija",
+        "Iestatījumi",
+        "Ekonomika",
+        "Izklaide",
+        "Mūzika",
+        "Mijiedarbība",
+        "Komunālie pakalpojumi"
       ]
     },
     "invite": {
       "help": {
-        "description": "Получить ссылку-приглашение Akemi."
+        "description": "Saņemiet Akemi ielūguma saiti."
       },
-      "description": "Akemi — это многофункциональный бот, предназначенный для улучшения и защиты вашего сервера Discord.\n\nНе стесняйтесь задавать вопросы на нашем официальном сервере. Мы всегда готовы найти решение вашей проблемы!",
-      "monitoring": "{emote_partner} Мониторинги",
-      "developer": "{emote_dev} Разработчики"
+      "description": "Akemi ir daudzfunkcionāls robots, kas izstrādāts, lai uzlabotu un aizsargātu jūsu Discord serveri.\n\nNepārprotami uzdodiet jautājumus mūsu oficiālajā serverī. Mēs vienmēr esam gatavi rast risinājumu jūsu problēmai!",
+      "monitoring": "{emote_partner} Monitoringi",
+      "developer": "{emote_dev} Izstrādātāji"
     },
     "invites": {
       "help": {
-        "description": "Посмотреть статистику отслеживаемых приглашений.",
+        "description": "Skatiet statistiku par izsekotajiem ielūgumiem.",
         "examples": [
           {
-            "description": "Отобразит статистику приглашений участника Monix."
+            "description": "Tiek parādīta lietotāja Monix ielūgumu statistika."
           }
         ]
       },
-      "not_found": "не удалось получить статистику приглашений.",
-      "invites_by": "Приглашения {user}",
-      "invites_total": "Имеет {invites, plural, one {# уникальное приглашение} few {# уникальных приглашения} many {# уникальных приглашений} other {# уникальных приглашений}}",
-      "statistic": "Статистика",
-      "join": "{emote_join} {tracked, plural, one {# вход} few {# входа} many {# входов} other {# входов}}",
-      "left": "{emote_left} {left, plural, one {# выход} few {# выхода} many {# выходов} other {# выходов}}",
-      "leave": "{emote_leave} {fake, plural, one {# фейк} few {# фейка} many {# фейков} other {# фейков}}"
+      "not_found": "nebija iespējams iegūt ielūgumu statistiku.",
+      "invites_by": "Ielūgumi {user}",
+      "invites_total": "Ir {invites, plural, one {# unikāls ielūgums} few {# unikāli ielūgumi} many {# unikāli ielūgumi} other {# unikāli ielūgumi}}",
+      "statistic": "Statistika",
+      "join": "{emote_join} {tracked, plural, one {# pieteikšana} few {# pieteikšanas} many {# pieteikšanas} other {# pieteikšanas}}",
+      "left": "{emote_left} {left, plural, one {# izeja} few {# izejas} many {# izejas} other {# izejas}}",
+      "leave": "{emote_leave} {fake, plural, one {# viltota} few {# viltotas} many {# viltotas} other {# viltotas}}"
     },
     "ping": {
       "help": {
-        "description": "Узнать текущую задержку бота."
+        "description": "Uzzināt robota pašreizējo kavēšanos."
       },
-      "calculating": "{emote_loading} Вычисление...",
-      "cluster": "Кластер: **{instanceName}** ({id}/{total})",
-      "shards": "Сегменты: [ {shard_list} ]",
-      "latency": "— Задержка: {latency}ms",
-      "command_reply": "— Обработка команд: {latency}ms",
-      "database": "— База данных: {latency}ms"
+      "calculating": "{emote_loading} Aprēķinu...",
+      "cluster": "Klasteris: **{instanceName}** ({id}/{total})",
+      "shards": "Segmenti: [ {shard_list} ]",
+      "latency": "— Aizkavēšana: {latency}ms",
+      "command_reply": "— Komandu apstrāde: {latency}ms",
+      "database": "— Datubāze: {latency}ms"
     },
     "remaining": {
       "help": {
-        "description": "Узнать, сколько осталось до следующего апа/бампа."
+        "description": "Noskaidrojiet, cik daudz laika ir atlicis līdz nākamajam apa/bumpam."
       },
-      "module_disabled": "на этом сервере не активирован модуль напоминаний.",
-      "title": "Напоминания",
-      "process": "{emote_loading} Получение информации...",
-      "no_data": "Нет данных.",
-      "its_time": "Пора бампать!",
-      "not_found": "{emote_error} Не удалось получить данные ни об одном боте или напоминании."
+      "module_disabled": "šajā serverī nav aktivizēts atgādinājumu modulis.",
+      "title": "Atgādinājumi",
+      "process": "{emote_loading} Informācijas iegūšana...",
+      "no_data": "Nav datu.",
+      "its_time": "Ir pienācis laiks bump!",
+      "not_found": "{emote_error} Nebija iespējams iegūt neviena robota vai atgādinājuma datus."
     },
     "server-info": {
       "help": {
-        "description": "Информация о сервере."
+        "description": "Servera informācija."
       },
       "verification_levels": {
-        "0": "Отсутствует",
-        "1": "Низкий",
-        "2": "Средний",
-        "3": "Высокий",
-        "4": "Самый высокий"
+        "0": "Nav",
+        "1": "Zems",
+        "2": "Vidēja",
+        "3": "Augsta",
+        "4": "Visaugstākā"
       },
       "channels": {
-        "text": "{emote_text} Текстовые каналы: {count}",
-        "voice": "{emote_voice} Голосовые каналы: {count}",
-        "stage": "{emote_stage} Трибуны: {count}",
-        "announce": "{emote_announce} Новостные каналы: {count}",
-        "category": "{emote_category} Категории: {count}"
+        "text": "{emote_text} Teksta kanāli: {count}",
+        "voice": "{emote_voice} Balss kanāli: {count}",
+        "stage": "{emote_stage} Tribūnas: {count}",
+        "announce": "{emote_announce} Ziņu kanāli: {count}",
+        "category": "{emote_category} Kategorijas: {count}"
       },
-      "owner": "{emote_owner} Создатель: {user}",
-      "verification_level": "{emote_verified} Уровень проверки: {level}",
-      "created": "{emote_paint} Создан: {createdAt}",
-      "total_channels": "{emote_text} Всего {count, plural, one {# канал} few {# канала} many {# каналов} other {# каналов}}",
-      "boost": "Бусты",
-      "boost_level": "{emote_boost} Уровень: **{level}** (бустов — {count})",
-      "main": "Основное",
+      "owner": "{emote_owner} Radītājs: {user}",
+      "verification_level": "{emote_verified} Pārbaudes līmenis: {level}",
+      "created": "{emote_paint} Izveidots: {createdAt}",
+      "total_channels": "{emote_text} Kopā {count, plural, one {# kanāls} few {# kanāli} many {# kanāli} other {# kanāli}}",
+      "boost": "Discord Boosti",
+      "boost_level": "{emote_boost} Līmenis: **{level}** (boosti — {count})",
+      "main": "Galvenais",
       "users": {
-        "title": "Пользователи",
-        "total": "{emote_member} Всего {count, plural, one {# пользователь} few {# пользователя} many {# пользователей} other {# пользователей}}",
-        "bots": "Ботов: {count}",
-        "members": "Участников: {count}"
+        "title": "Lietotāji",
+        "total": "{emote_member} Kopā {count, plural, one {# lietotājs} few {# lietotāji} many {# lietotāji} other {# lietotāji}}",
+        "bots": "Roboti: {count}",
+        "members": "Lietotāji: {count}"
       },
       "bonus": {
-        "title": "{emote_boost} Бонусы",
-        "description": "На сервере активирован пакет **AkemiPRO**.\nСпасибо за поддержку ❤️"
+        "title": "{emote_boost} Bonusi",
+        "description": "Serverī ir aktivizēta **AkemiPRO** pakete.\nPaldies par atbalstu ❤️"
       },
       "up": {
         "help": {
-          "description": "Оценить сервер на BotiCord."
+          "description": "Novērtējiet serveri uz BotiCord."
         },
-        "title": "Сервер на Boticord",
-        "failed_to_request": "Что-то пошло не так! Попробуйте еще раз чуть позже."
+        "title": "Serveris uz Boticord",
+        "failed_to_request": "Kaut kas ir noticis nepareizi! Pamēģiniet vēlreiz nedaudz vēlāk."
       }
     },
     "user-info": {
       "help": {
-        "description": "Посмотреть информацию об участнике.",
+        "description": "Apskatīt informāciju par lietotāju.",
         "examples": [
           {
-            "description": "Отобразит информацию об участнике, который вызвал команду."
+            "description": "Tiek parādīta informācija par lietotāju, kurš izsauca komandu."
           },
           {
-            "description": "Отобразит информацию об участнике Monix#6666."
+            "description": "Tiek parādīta informācija par lietotāju Monix#666."
           }
         ]
       },
-      "no_roles": "Нет ролей.",
-      "member_not_found": "участник не найден.",
-      "public": "Публичный: {boolean}",
-      "app_tags": "Теги: {tags}",
-      "intents": "Привилегированные намерения:",
-      "member_voice": "{emote_voice} Находится в голосовом канале: {channel}",
-      "timeout_end": "{emote_timeout} Конец наказания: {end}",
-      "server_avatar": "{emote_slash} Встраивание также отображает основной аватар участника, поскольку изменены параметры профиля сервера",
-      "invited": "Пригласили",
-      "joined": "Присоединился",
-      "created": "Аккаунт создан",
-      "more_info": "Дополнительная информация",
-      "roles": "Роли",
-      "avatar": "Серверный аватар"
+      "no_roles": "Nav lomu.",
+      "member_not_found": "lietotājs nav atrasts.",
+      "public": "Publisks: {boolean}",
+      "app_tags": "Tagi: {tags}",
+      "intents": "Priviliģēti nodomi:",
+      "member_voice": "{emote_voice} Atrodas balss kanālā: {channel}",
+      "timeout_end": "{emote_timeout} Sods beigsies: {end}",
+      "server_avatar": "{emote_slash} Embeda tiek parādīts arī dalībnieka galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi.",
+      "invited": "Uzaicināja",
+      "joined": "Pievienojās",
+      "created": "Konts izveidots",
+      "more_info": "Papildu informācija",
+      "roles": "Lomas",
+      "avatar": "Servera avatārs"
     },
     "ban": {
       "help": {
@@ -245,13 +245,13 @@
           }
         ]
       },
-      "process": "{emote_loading} Наказываю...",
-      "targets_not_found": "укажите участников, которых вы хотите наказать.",
-      "invalid_timeout": "указано некорректное время наказания.",
-      "type": "Наказание",
-      "updated": "Обновлено",
-      "targets": "{count, plural, =1 {Наказанный участник} other {Наказанные участники}}",
-      "failed_to_mute": "Не удалось наказать указанных участников."
+      "process": "{emote_loading} Sodīšana...",
+      "targets_not_found": "norādiet dalībniekus, kurus vēlaties sodīt.",
+      "invalid_timeout": "soda laiks ir nepareizs.",
+      "type": "Sods",
+      "updated": "Atjaunots",
+      "targets": "{count, plural, =1 {Sodīts dalībnieks} other {Sodītie dalībnieki}}",
+      "failed_to_mute": "Minētos dalībniekus nebija iespējams sodīt."
     },
     "play": {
       "help": {
@@ -273,7 +273,7 @@
       "search_soundcloud": "Meklēšanas režīms {emote_soundcloud} SoundCloud",
       "track_added": "{emote_platform} Dziemsa {track} pievienota rindai.",
       "playlist_added": "{emote_platform} Dziesmas saraksts {playlist} pievienots rindai.",
-      "search_result": "{emote_platform} Atrasts {tracks, plural, one {# dziesma} few {# dziesmu} many {# dziesmas} other {# dziesmas}} Jūsu pieprasījumā.",
+      "search_result": "{emote_platform} Es atradu {tracks, plural, one {# dziesmu} few {# dziesmas} many {# dziesmas} other {# dziesmas}} Jūsu pieprasījumā.",
       "successfully_added": "Dziesmas numurs {n} veiksmīgi pievienots servera rindai.",
       "no_matches": "{emote_error} {user}, jūsu pieprasījumam atbilstošas dziesmas netika atrastas.",
       "load_failed": "{emote_error} {user}, neizdevās ielādēt izvēlētās dziesmas."
@@ -368,22 +368,22 @@
   },
   "components": {
     "skynet": {
-      "add": "Дополнить",
-      "regenerate": "Повторная генерация",
-      "stop_generate": "Остановить генерацию"
+      "add": "Papildināt",
+      "regenerate": "Atkārtota ģenerācija",
+      "stop_generate": "Pārtraukt ģenerēšanu"
     },
     "help": {
-      "select_category": "Выберите категорию"
+      "select_category": "Izvēlieties kategoriju"
     },
     "invite": {
-      "invite_bot": "Пригласить бота",
-      "site": "Сайт",
-      "support_server": "Сервер поддержки"
+      "invite_bot": "Uzaicināt robotu",
+      "site": "Tīmekļa vietne",
+      "support_server": "Atbalsta serveris"
     },
     "user-info": {
-      "terms_of_service": "Условия пользования",
-      "privacy_policy": "Политика конфиденциальности",
-      "add_bot": "Добавить бота"
+      "terms_of_service": "Lietošanas noteikumi",
+      "privacy_policy": "Konfidencialitātes politika",
+      "add_bot": "Pievienot robotu"
     },
     "music": {
       "track": {

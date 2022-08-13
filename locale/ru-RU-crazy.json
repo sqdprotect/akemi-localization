@@ -9,6 +9,49 @@
     "requester": "Запрос от {user}"
   },
   "commands": {
+    "configuration": {
+      "help": {
+        "description": "Посмотреть текущую конфигурацию сервера."
+      },
+      "data_not_found": "Вашего сервера нет в базе данных.",
+      "server_config": "Конфигурация сервера {guildName}",
+      "select_options": "Выберите опцию в выпадающем списке для просмотра конфигурации сервера.",
+      "general": {
+        "title": "{emote_general} Основные",
+        "language": "Язык: `{language}`",
+        "embed_color": "Цвет встраивания: `{hex}`",
+        "currency": "Иконка серверной валюты: {currency}",
+        "prefix": "Префикс сервера: `{prefix}`",
+        "premium": "AkemiPRO: {boolean}",
+        "mod_roles": "Роли модераторов",
+        "auto_roles": "Автоматически назначаемые роли"
+      },
+      "automod": {
+        "title": "{emote_automod} Автоматическая модерация",
+        "additional_filters": "Дополнительные фильтры",
+        "strike_count": "{count, plural, one {# страйк} few {# страйка} many {# страйков} other {# страйков}}",
+        "max_newlines": "Максимальное количество новых строк: {count}",
+        "max_mentions_count": "Максимальное количество упоминаний ролей/участников: {count}",
+        "dupe_limit": "Предел: {count, plural, one {# сообщение} few {# сообщения} many {# сообщений} other {# сообщений}}",
+        "dupe_strike_trash": "Выдавать страйки после после достижения предела: {count, plural, one {# сообщение} few {# сообщения} many {# сообщений} other {# сообщений}}",
+        "emoji_limit_per_message": "Предел эмодзи для 1 сообщения: {count}",
+        "rate_limit_join": "Предел: {count, plural, one {# присоединение} few {# присоединения} many {# присоединений} other {# присоединений}}",
+        "join_time": "Время: {time}"
+      },
+      "logs": {
+        "title": "{emote_logs} Журнал действий"
+      }
+    },
+    "mutes": {
+      "help": {
+        "description": "Посмотреть список наказанных участников."
+      },
+      "process": "{emote_loading} Получение информации...",
+      "no_member_in_timeouts": "В настоящее время нет наказанных участников.",
+      "member_timeouts": "Наказанные участники",
+      "expires": "{emote_timeout} Истекает: {time}"
+    },
+    "settings": {},
     "skynet": {
       "help": {
         "description": "Составить рацион питания на сегодня через нейросеть"
@@ -169,6 +212,13 @@
         "title": "Сервер на Boticord",
         "failed_to_request": "Кажется что-то пошло не так. Перекреститесь и попробуйте снова чуть позже."
       }
+    },
+    "up": {
+      "help": {
+        "description": "Оценить сервер на BotiCord."
+      },
+      "title": "Сервер на Boticord",
+      "failed_to_request": "Что-то пошло не так! Попробуйте еще раз чуть позже."
     },
     "user-info": {
       "help": {
@@ -367,6 +417,14 @@
     }
   },
   "components": {
+    "configuration": {
+      "placeholder": "Выбрать опцию",
+      "options": {
+        "general": "Основные",
+        "automod": "Автоматическая модерация",
+        "logs": "Журнал действий"
+      }
+    },
     "skynet": {
       "add": "Дополнить",
       "regenerate": "По второму кругу",
@@ -515,7 +573,6 @@
       },
       "next_tracks": "Следующие треки",
       "total_duration": "Общая длительность: {duration}",
-
       "total_queue": "Всего треков в череде: {length}",
       "maintenance": {
         "title": "Апгрейд бота...",

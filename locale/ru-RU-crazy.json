@@ -33,7 +33,7 @@
         "max_newlines": "Максимальное количество новых строк: {count}",
         "max_mentions_count": "Максимальное количество пингов обществ невоспитанных гулей/обсосов: {count}",
         "dupe_limit": "Граница терпения: {count, plural, one {# высер} few {# высера} many {# высеров} other {# высеров}}",
-        "dupe_strike_trash": "Раздавать чапалахи после достижения предела: {count, plural, one one {# высера} few {# высеров} many {# высеров} other {# высеров}}",
+        "dupe_strike_trash": "Раздавать чапалахи после достижения предела: {count, plural, one {# высера} few {# высеров} many {# высеров} other {# высеров}}",
         "emoji_limit_per_message": "Лимит эмодзи в одном высере: {count}",
         "rate_limit_join": "Предел: {count, plural, one {# присоединение} few {# присоединения} many {# присоединений} other {# присоединений}}",
         "join_time": "Время: {time}"
@@ -204,14 +204,14 @@
       "bonus": {
         "title": "{emote_boost} Привилегии",
         "description": "Данный притон обеспечил едой главных фанатов инстасамки ❤"
-      },
-      "up": {
-        "help": {
-          "description": "Оценить сервер на BotiCord."
-        },
-        "title": "Сервер на Boticord",
-        "failed_to_request": "Кажется что-то пошло не так. Перекреститесь и попробуйте снова чуть позже."
       }
+    },
+    "up": {
+      "help": {
+        "description": "Оценить сервер на BotiCord."
+      },
+      "title": "Сервер на Boticord",
+      "failed_to_request": "Кажется что-то пошло не так. Перекреститесь и попробуйте снова чуть позже."
     },
     "user-info": {
       "help": {

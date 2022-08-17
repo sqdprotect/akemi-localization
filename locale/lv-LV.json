@@ -4,68 +4,68 @@
   },
   "common": {
     "moderator": "Moderators",
-    "author": "Автор",
+    "author": "Autors",
     "reason": "Iemesls",
-    "channel": "Канал",
+    "channel": "Kanāls",
     "duration": "Ilgums",
     "requester": "Pieprasījums no {user}"
   },
   "commands": {
     "configuration": {
       "help": {
-        "description": "Посмотреть текущую конфигурацию сервера."
+        "description": "Apskatīt pašreizējo servera konfigurāciju."
       },
-      "data_not_found": "Вашего сервера нет в базе данных.",
-      "server_config": "Конфигурация сервера {guildName}",
-      "select_options": "Выберите опцию в выпадающем списке для просмотра конфигурации сервера.",
+      "data_not_found": "Jūsu servera datu bāzē nav.",
+      "server_config": "Servera {guildName} konfigurācija",
+      "select_options": "Lai apskatīt servera konfigurāciju, no nolaižamajā sarakstā izvēlējaties opciju.",
       "general": {
-        "title": "{emote_general} Основные",
-        "language": "Язык: `{language}`",
-        "embed_color": "Цвет встраивания: `{hex}`",
-        "currency": "Иконка серверной валюты: {currency}",
-        "prefix": "Префикс сервера: `{prefix}`",
+        "title": "{emote_general} Galvenie",
+        "language": "Valoda: `{language}`",
+        "embed_color": "Krāsu ievietošana: `{hex}`",
+        "currency": "Servera valūtas ikona: {currency}",
+        "prefix": "Servera prefikss: `{prefix}`",
         "premium": "AkemiPRO: {boolean}",
-        "mod_roles": "Роли модераторов",
-        "auto_roles": "Автоматически назначаемые роли"
+        "mod_roles": "Moderatoru lomas",
+        "auto_roles": "Automātiski piešķirtās lomas"
       },
       "automod": {
-        "title": "{emote_automod} Автоматическая модерация",
-        "additional_filters": "Дополнительные фильтры",
-        "strike_count": "{count, plural, one {# страйк} few {# страйка} many {# страйков} other {# страйков}}",
-        "max_newlines": "Максимальное количество новых строк: {count}",
-        "max_mentions_count": "Максимальное количество упоминаний ролей/участников: {count}",
-        "dupe_limit": "Предел: {count, plural, one {# сообщение} few {# сообщения} many {# сообщений} other {# сообщений}}",
-        "dupe_strike_trash": "Выдавать страйки после после достижения предела: {count, plural, one {# сообщение} few {# сообщения} many {# сообщений} other {# сообщений}}",
-        "emoji_limit_per_message": "Предел эмодзи для 1 сообщения: {count}",
-        "rate_limit_join": "Предел: {count, plural, one {# присоединение} few {# присоединения} many {# присоединений} other {# присоединений}}",
-        "join_time": "Время: {time}"
+        "title": "{emote_automod} Automātiskā moderēšana",
+        "additional_filters": "Papildu filtri",
+        "strike_count": "{count, plural, one {# brīdinājums} few {# brīdinājumi} many {# brīdinājumi} other {# brīdinājumi}}",
+        "max_newlines": "Maksimālais jaunu rindu skaits: {count}",
+        "max_mentions_count": "Maksimālais lomu/lietotāju pieminējumu skaits: {count}",
+        "dupe_limit": "Limits: {count, plural, one {# ziņa} few {# ziņas} many {# ziņas} other {# ziņas}}",
+        "dupe_strike_trash": "Izdot brīdinājumu pēc tam, kad sasniegts limits būs: {count, plural, one {# ziņa} few {# ziņas} many {# ziņas} other {# ziņas}}",
+        "emoji_limit_per_message": "Emodži ierobežojums 1 ziņojumam: {count}",
+        "rate_limit_join": "Limits: {count, plural, one {# pievienošana} few {# pievienošanās} many {# pievienošanās} other {# pievienošanās}}",
+        "join_time": "Laiks: {time}"
       },
       "logs": {
-        "title": "{emote_logs} Журнал действий"
+        "title": "{emote_logs} Darbību žurnāls"
       }
     },
     "mutes": {
       "help": {
-        "description": "Посмотреть список наказанных участников."
+        "description": "Skatīt sodīto lietotāju sarakstu."
       },
-      "process": "{emote_loading} Получение информации...",
-      "no_member_in_timeouts": "В настоящее время нет наказанных участников.",
-      "member_timeouts": "Наказанные участники",
-      "expires": "{emote_timeout} Истекает: {time}"
+      "process": "{emote_loading} Informācijas iegūšana...",
+      "no_member_in_timeouts": "Pašlaik nav sodītu lietotāju.",
+      "member_timeouts": "Sodītie lietotāji",
+      "expires": "{emote_timeout} Beidzas: {time}"
     },
     "say": {
       "help": {
-        "description": "Отправить сообщение от имени бота.",
+        "description": "Nosūtīt ziņojumu robota vārdā.",
         "examples": [
           {
-            "description": "Отправить сообщение в канал #general."
+            "description": "Sūtīt ziņu uz kanālu #general."
           },
           {
-            "description": "Отправить сообщение в текущий чат."
+            "description": "Sūtīt ziņu uz pašreizējo kanālu."
           }
         ]
       },
-      "no_content": "укажите текст для отправки сообщения."
+      "no_content": "ievadiet tekstu, lai nosūtītu ziņojumu."
     },
     "settings": {},
     "skynet": {
@@ -91,7 +91,7 @@
           }
         ]
       },
-      "server_avatar": "{emote_slash} Embeda tiek parādīts arī dalībnieka galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi."
+      "server_avatar": "{emote_slash} Embeda tiek parādīts arī lietotāja galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi."
     },
     "bonus": {},
     "help": {
@@ -120,7 +120,7 @@
       "example": "Piemērs: №{n}",
       "moderate": {
         "title": "{emote_warn} Komanda no moderācijas sadaļas",
-        "description": "Šī ir moderēšanas komanda, kas servera dalībniekiem ir pieejama ar noteiktiem nosacījumiem."
+        "description": "Šī ir moderēšanas komanda, kas servera lietotājiem ir pieejama ar noteiktiem nosacījumiem."
       },
       "premium": {
         "title": "{emote_boost} Komanda premium serveriem",
@@ -248,7 +248,7 @@
       "intents": "Priviliģēti nodomi:",
       "member_voice": "{emote_voice} Atrodas balss kanālā: {channel}",
       "timeout_end": "{emote_timeout} Sods beigsies: {end}",
-      "server_avatar": "{emote_slash} Embeda tiek parādīts arī dalībnieka galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi.",
+      "server_avatar": "{emote_slash} Embeda tiek parādīts arī lietotāja galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi.",
       "invited": "Uzaicināja",
       "joined": "Pievienojās",
       "created": "Konts izveidots",
@@ -272,7 +272,7 @@
       "targets_not_found": "norādiet lietotājus, kurus vēlaties bloķēt.",
       "type": "Bloķēšana",
       "targets": "{count, plural, =1 {Bloķēts lietotājs} other {Bloķētie lietotāji}}",
-      "failed_to_ban": "Neizdevās bloķēt norādītos dalībniekus."
+      "failed_to_ban": "Neizdevās bloķēt norādītos lietotājus."
     },
     "kick": {
       "help": {
@@ -290,27 +290,27 @@
       "targets_not_found": "norādiet lietotājus, kurus vēlaties izmest.",
       "type": "Kick",
       "targets": "{count, plural, =1 {Izmests lietotājs} other {Izmesti lietotāji}}",
-      "failed_to_kick": "Neizdevās izmest norādītos dalībniekus."
+      "failed_to_kick": "Neizdevās izmest norādītos lietotājus."
     },
     "mute": {
       "help": {
-        "description": "Uz laiku sodīt dalībnieku.",
+        "description": "Uz laiku sodīt lietotāju.",
         "examples": [
           {
-            "description": "Sodīt dalībnieku Monix#666 uz 10 stundām šādu iemeslu dēļ: Spams."
+            "description": "Sodīt lietotāju Monix#666 uz 10 stundām šādu iemeslu dēļ: Spams."
           },
           {
-            "description": "Sodīt dalībniekus Monix#6666 дори#6666 uz 10 stundām šādu iemeslu dēļ: Spams."
+            "description": "Sodīt lietotājus Monix#6666 дори#6666 uz 10 stundām šādu iemeslu dēļ: Spams."
           }
         ]
       },
       "process": "{emote_loading} Sodīšana...",
-      "targets_not_found": "norādiet dalībniekus, kurus vēlaties sodīt.",
+      "targets_not_found": "norādiet lietotājus, kurus vēlaties sodīt.",
       "invalid_timeout": "soda laiks ir nepareizs.",
       "type": "Sods",
       "updated": "Atjaunots",
-      "targets": "{count, plural, =1 {Sodīts dalībnieks} other {Sodītie dalībnieki}}",
-      "failed_to_mute": "Minētos dalībniekus nebija iespējams sodīt."
+      "targets": "{count, plural, =1 {Sodīts lietotājs} other {Sodītie lietotāji}}",
+      "failed_to_mute": "Minētos lietotājus nebija iespējams sodīt."
     },
     "play": {
       "help": {
@@ -417,7 +417,7 @@
   },
   "events": {
     "interaction_create": {
-      "received": "Šo mijiedarbību izveidoja cits dalībnieks.",
+      "received": "Šo mijiedarbību izveidoja cits lietotājs.",
       "expired": "Šī mijiedarbība vairs nav pieejama, jo tās derīguma termiņš ir beidzies. Ja nepieciešams, izsauciet šo komandu vēlreiz.",
       "failed": {
         "title": "Mijiedarbības kļūda",
@@ -425,27 +425,27 @@
       }
     },
     "message_delete": {
-      "deleted": "Сообщение удалено",
-      "executor": "Удаливший"
+      "deleted": "Ziņojums ir dzēsts",
+      "executor": "Izdzēsa"
     },
     "message_update": {
-      "updated": "Сообщение обновлено",
-      "before": "До",
-      "after": "После",
-      "empty_message": "Пустое сообщение"
+      "updated": "Ziņojums ir atjaunināts",
+      "before": "Līdz",
+      "after": "Pēc",
+      "empty_message": "Tukšs ziņojums"
     }
   },
   "components": {
     "configuration": {
-      "placeholder": "Выбрать опцию",
+      "placeholder": "Izvēlieties opciju",
       "options": {
-        "general": "Основные",
-        "automod": "Автоматическая модерация",
-        "logs": "Журнал действий"
+        "general": "Galvenā",
+        "automod": "Automātiska moderēšana",
+        "logs": "Darbību žurnāls"
       }
     },
     "say": {
-      "embed_builder": "Конструктор встраивания"
+      "embed_builder": "Ievietošanas konstruktors"
     },
     "skynet": {
       "add": "Papildināt",
@@ -499,7 +499,7 @@
       }
     },
     "message_update": {
-      "jump_to_message": "Перейти к сообщению"
+      "jump_to_message": "Pāriet uz ziņojumu"
     }
   },
   "services": {

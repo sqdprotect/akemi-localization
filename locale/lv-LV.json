@@ -1,73 +1,190 @@
 {
   "i18n": {
-    "note": "Visus tulkojumus nodrošina mūsu kopiena. Mēs nevaram garantēt tulkojumu precizitāti un kvalitāti."
+    "note": "Все переводы предоставлены нашим сообществом. Мы не можем гарантировать их правильность и качество.\nЕсли вы знаете один из языков, представленных в нашем репозитории на Github ({url}), мы будем рады получить ваш вклад в проект Akemi!"
   },
   "common": {
     "moderator": "Moderators",
-    "author": "Autors",
+    "member": "Участник",
+    "author": "Автор",
     "reason": "Iemesls",
-    "channel": "Kanāls",
+    "channel": "Канал",
     "duration": "Ilgums",
-    "requester": "Pieprasījums no {user}"
+    "requester": "Pieprasījums no {user}",
+    "target_not_found": "участник не найден."
   },
   "commands": {
     "configuration": {
       "help": {
-        "description": "Apskatīt pašreizējo servera konfigurāciju."
+        "description": "Посмотреть текущую конфигурацию сервера."
       },
-      "data_not_found": "Jūsu servera datu bāzē nav.",
-      "server_config": "Servera {guildName} konfigurācija",
-      "select_options": "Lai apskatīt servera konfigurāciju, no nolaižamajā sarakstā izvēlējaties opciju.",
+      "data_not_found": "Вашего сервера нет в базе данных.",
+      "server_config": "Конфигурация сервера {guildName}",
+      "select_options": "Выберите опцию в выпадающем списке для просмотра конфигурации сервера.",
       "general": {
-        "title": "{emote_general} Galvenie",
-        "language": "Valoda: `{language}`",
-        "embed_color": "Krāsu ievietošana: `{hex}`",
-        "currency": "Servera valūtas ikona: {currency}",
-        "prefix": "Servera prefikss: `{prefix}`",
+        "title": "{emote_general} Основные",
+        "language": "Язык: `{language}`",
+        "embed_color": "Цвет встраивания: `{hex}`",
+        "currency": "Иконка серверной валюты: {currency}",
+        "prefix": "Префикс сервера: `{prefix}`",
         "premium": "AkemiPRO: {boolean}",
-        "mod_roles": "Moderatoru lomas",
-        "auto_roles": "Automātiski piešķirtās lomas"
+        "mod_roles": "Роли модераторов",
+        "auto_roles": "Автоматически назначаемые роли"
       },
       "automod": {
-        "title": "{emote_automod} Automātiskā moderēšana",
-        "additional_filters": "Papildu filtri",
-        "strike_count": "{count, plural, one {# brīdinājums} few {# brīdinājumi} many {# brīdinājumi} other {# brīdinājumi}}",
-        "max_newlines": "Maksimālais jaunu rindu skaits: {count}",
-        "max_mentions_count": "Maksimālais lomu/lietotāju pieminējumu skaits: {count}",
-        "dupe_limit": "Limits: {count, plural, one {# ziņa} few {# ziņas} many {# ziņas} other {# ziņas}}",
-        "dupe_strike_trash": "Izdot brīdinājumu pēc tam, kad sasniegts limits būs: {count, plural, one {# ziņa} few {# ziņas} many {# ziņas} other {# ziņas}}",
-        "emoji_limit_per_message": "Emodži ierobežojums 1 ziņojumam: {count}",
-        "rate_limit_join": "Limits: {count, plural, one {# pievienošana} few {# pievienošanās} many {# pievienošanās} other {# pievienošanās}}",
-        "join_time": "Laiks: {time}"
+        "title": "{emote_automod} Автоматическая модерация",
+        "additional_filters": "Дополнительные фильтры",
+        "strike_count": "{count, plural, one {# страйк} few {# страйка} many {# страйков} other {# страйков}}",
+        "max_newlines": "Максимальное количество новых строк: {count}",
+        "max_mentions_count": "Максимальное количество упоминаний ролей/участников: {count}",
+        "dupe_limit": "Предел: {count, plural, one {# сообщение} few {# сообщения} many {# сообщений} other {# сообщений}}",
+        "dupe_strike_trash": "Выдавать страйки после после достижения предела: {count, plural, one {# сообщение} few {# сообщения} many {# сообщений} other {# сообщений}}",
+        "emoji_limit_per_message": "Предел эмодзи для 1 сообщения: {count}",
+        "rate_limit_join": "Предел: {count, plural, one {# присоединение} few {# присоединения} many {# присоединений} other {# присоединений}}",
+        "join_time": "Время: {time}"
       },
       "logs": {
-        "title": "{emote_logs} Darbību žurnāls"
+        "title": "{emote_logs} Журнал действий"
       }
     },
     "mutes": {
       "help": {
-        "description": "Skatīt sodīto lietotāju sarakstu."
+        "description": "Посмотреть список наказанных участников."
       },
-      "process": "{emote_loading} Informācijas iegūšana...",
-      "no_member_in_timeouts": "Pašlaik nav sodītu lietotāju.",
-      "member_timeouts": "Sodītie lietotāji",
-      "expires": "{emote_timeout} Beidzas: {time}"
+      "process": "{emote_loading} Получение информации...",
+      "no_member_in_timeouts": "В настоящее время нет наказанных участников.",
+      "member_timeouts": "Наказанные участники",
+      "expires": "{emote_timeout} Истекает: {time}"
+    },
+    "reset": {
+      "help": {
+        "description": "Обнулить прогресс участников"
+      },
+      "select_menu_option": "Выберите опцию из выпадающего списка.",
+      "warning": "{emote_warn} Это действие необратимо, для сброса прогресса нажмите соответствующую кнопку."
     },
     "say": {
       "help": {
-        "description": "Nosūtīt ziņojumu robota vārdā.",
+        "description": "Отправить сообщение от имени бота.",
         "examples": [
           {
-            "description": "Sūtīt ziņu uz kanālu #general."
+            "description": "Отправить сообщение в канал #general."
           },
           {
-            "description": "Sūtīt ziņu uz pašreizējo kanālu."
+            "description": "Отправить сообщение в текущий чат."
           }
         ]
       },
-      "no_content": "ievadiet tekstu, lai nosūtītu ziņojumu."
+      "no_content": "укажите текст для отправки сообщения.",
+      "failed_to_parse": "не удалось распознать текст сообщения."
     },
-    "settings": {},
+    "settings": {
+      "help": {
+        "description": "Настройка модулей бота"
+      },
+      "title": "Настройки сервера",
+      "description": "Взаимодействуйте с выпадающим меню выбора, чтобы настроить сервер.",
+      "auto-role": {
+        "failed_to_get_roles": "{emote_error} Не удалось получить список ролей. Вероятно, у бота нет прав или нарушена иерархия ролей.",
+        "title": "Автоматические роли",
+        "description": {
+          "line_1": "Роли в выпадающем списке **выделены**, если они уже используются для назначения участникам сервера.\n",
+          "line_2": "Используйте кнопки для управления страницами меню.",
+          "line_3": "Всего назначается **{count, plural, one {# роль} few {# роли} many {# ролей} other {# ролей}}**."
+        },
+        "pro": {
+          "title": "{emote_boost} Хотите назначать больше ролей?",
+          "description": "С подпиской AkemiPRO вы можете назначить до 25 ролей."
+        },
+        "successfully_updated": "{emote_success} Список автоматических ролей успешно обновлен."
+      },
+      "automod": {
+        "title": "Автоматическая модерация",
+        "description": "Выберите фильтр для настройки."
+      },
+      "casino": {
+        "title": "Казино",
+        "description": "При использовании команды слотов максимальная ставка составляет **150**, но вы можете изменить ее на более высокую.",
+        "specify_rate": "Укажите новую ставку.",
+        "specify_real_number": "Укажите действительное число.",
+        "rate_range": "Укажите максимальное значение ставки в диапазоне от **150** до **100,000**",
+        "rate_changed": "{emote_success} Ставка `{rate}` успешно сохранена."
+      },
+      "color": {
+        "title": "Цвет встраивания",
+        "description": "Когда вы используете команды, бот отображает вставки, которые по умолчанию имеют невидимый цвет.\n\nВы можете установить свой цвет в соответствии с тематикой вашего сообщества.",
+        "specify_hex": "Укажите новый цвет в `hex` формате. Пример: `#976767`",
+        "invalid_hex": "Не удалось получить информацию об этом цвете. Пожалуйста, попробуйте еще раз.",
+        "hex_equal_current": "Вы указали тот же цвет, что и уже установленный. Пожалуйста, попробуйте еще раз.",
+        "hex_changed": "{emote_success} Цвет `#{hex}` успешно изменен.",
+        "hex_default_changed": "{emote_success} Цвет встраивания по умолчанию успешно изменен."
+      },
+      "currency": {
+        "title": "Серверная валюта",
+        "description": "Позволяет изменить иконку валюты сервера, которая отображается в командах из категории \"экономика\".",
+        "error": {
+          "title": "{emote_warn} Обнаружена ошибка",
+          "description": "Akemi не смогла найти используемый в данный момент эмодзи. Мы рекомендуем изменить его, чтобы избежать некорректного отображения."
+        },
+        "specify_currency": "Укажите новый эмодзи, который будет использоваться в качестве индикатора в командах экономики.",
+        "emoji_not_found": "Я не смогла найти такой эмодзи.",
+        "currency_changed": "Валюта сервера успешно изменена."
+      },
+      "goodbye": {},
+      "logs": {
+        "failed_to_get_channels": "Не удалось получить список доступных каналов. Возможно, у бота отсутствуют права.",
+        "title": "Журнал действий",
+        "description": {
+          "line_1": "Это различные типы событий, которые срабатывают при удалении сообщений, использовании команд и действиях по модерации, позволяя модераторам и администраторам получить более подробную информацию о происходящих действиях.\n\n",
+          "line_2": "Зеленый индикатор (<:online:815270641078108160>) в списке сообщает вам, что это действие уже активно, и отправляет полезную информацию в канал.\n\n",
+          "line_3": "Используйте кнопки для управления страницами в списках."
+        },
+        "updated": "{emote_success} Настройки были успешно обновлены."
+      },
+      "music": {
+        "title": "Музыка",
+        "description": {
+          "line_1": "Сейчас максимальная длина очереди: {maxQueue}\n",
+          "line_2": "Роли Dj: {djRoles}"
+        },
+        "max_queue_changed": "{emote_success} Максимальная длина очереди успешно изменена."
+      },
+      "notification": {},
+      "prefix": {
+        "title": "Префикс",
+        "description": "Установка префикса, на который бот будет реагировать при вызове команды.",
+        "prefix_changed": "{emote_success} Префикс успешно изменен."
+      },
+      "private": {
+        "title": "Приватные голосовые комнаты",
+        "description": "Это временные комнаты, которые создаются при входе в триггерный канал и удаляются, если в них нет участников.",
+        "perms_required": "{emote_error} Для начала выдайте мне соответствующие права (`Управлять каналами`).",
+        "room": "Приватные каналы",
+        "data": {
+          "name": {
+            "one": "Создать канал [+]",
+            "two": "Управление комнатами Akemi"
+          },
+          "reason": {
+            "one": "[Приватные комнаты] Создание категории приватных каналов",
+            "two": "[Приватные комнаты] Установка стандартного лимита для триггер канала",
+            "three": "[Приватные комнаты] Включение сервиса приватных комнат Администратором {user}"
+          }
+        },
+        "limit_changed": "{emote_success} Лимит успешно изменен."
+      },
+      "saver": {
+        "title": "Восстановление данных пользователя",
+        "description": "Эта служба отвечает за восстановление пользовательских данных - ролей и псевдонимов, если таковые имеются.",
+        "strict_roles": {
+          "title": "Строгие роли {emote_new}",
+          "description": "Установите роли, которые не должны восстанавливаться при возвращении пользователя на сервер."
+        }
+      },
+      "welcome": {}
+    },
+    "relation": {
+      "help": {}
+    },
     "skynet": {
       "help": {
         "description": "Izdomāt stāstu ar neironu tīkla palīdzību."
@@ -91,7 +208,7 @@
           }
         ]
       },
-      "server_avatar": "{emote_slash} Embeda tiek parādīts arī lietotāja galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi."
+      "server_avatar": "{emote_slash} Embeda tiek parādīts arī dalībnieka galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi."
     },
     "bonus": {},
     "help": {
@@ -120,7 +237,7 @@
       "example": "Piemērs: №{n}",
       "moderate": {
         "title": "{emote_warn} Komanda no moderācijas sadaļas",
-        "description": "Šī ir moderēšanas komanda, kas servera lietotājiem ir pieejama ar noteiktiem nosacījumiem."
+        "description": "Šī ir moderēšanas komanda, kas servera dalībniekiem ir pieejama ar noteiktiem nosacījumiem."
       },
       "premium": {
         "title": "{emote_boost} Komanda premium serveriem",
@@ -248,7 +365,7 @@
       "intents": "Priviliģēti nodomi:",
       "member_voice": "{emote_voice} Atrodas balss kanālā: {channel}",
       "timeout_end": "{emote_timeout} Sods beigsies: {end}",
-      "server_avatar": "{emote_slash} Embeda tiek parādīts arī lietotāja galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi.",
+      "server_avatar": "{emote_slash} Embeda tiek parādīts arī dalībnieka galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi.",
       "invited": "Uzaicināja",
       "joined": "Pievienojās",
       "created": "Konts izveidots",
@@ -272,7 +389,7 @@
       "targets_not_found": "norādiet lietotājus, kurus vēlaties bloķēt.",
       "type": "Bloķēšana",
       "targets": "{count, plural, =1 {Bloķēts lietotājs} other {Bloķētie lietotāji}}",
-      "failed_to_ban": "Neizdevās bloķēt norādītos lietotājus."
+      "failed_to_ban": "Neizdevās bloķēt norādītos dalībniekus."
     },
     "kick": {
       "help": {
@@ -290,27 +407,44 @@
       "targets_not_found": "norādiet lietotājus, kurus vēlaties izmest.",
       "type": "Kick",
       "targets": "{count, plural, =1 {Izmests lietotājs} other {Izmesti lietotāji}}",
-      "failed_to_kick": "Neizdevās izmest norādītos lietotājus."
+      "failed_to_kick": "Neizdevās izmest norādītos dalībniekus."
     },
     "mute": {
       "help": {
-        "description": "Uz laiku sodīt lietotāju.",
+        "description": "Uz laiku sodīt dalībnieku.",
         "examples": [
           {
-            "description": "Sodīt lietotāju Monix#666 uz 10 stundām šādu iemeslu dēļ: Spams."
+            "description": "Sodīt dalībnieku Monix#666 uz 10 stundām šādu iemeslu dēļ: Spams."
           },
           {
-            "description": "Sodīt lietotājus Monix#6666 дори#6666 uz 10 stundām šādu iemeslu dēļ: Spams."
+            "description": "Sodīt dalībniekus Monix#6666 дори#6666 uz 10 stundām šādu iemeslu dēļ: Spams."
           }
         ]
       },
       "process": "{emote_loading} Sodīšana...",
-      "targets_not_found": "norādiet lietotājus, kurus vēlaties sodīt.",
+      "targets_not_found": "norādiet dalībniekus, kurus vēlaties sodīt.",
       "invalid_timeout": "soda laiks ir nepareizs.",
       "type": "Sods",
       "updated": "Atjaunots",
-      "targets": "{count, plural, =1 {Sodīts lietotājs} other {Sodītie lietotāji}}",
-      "failed_to_mute": "Minētos lietotājus nebija iespējams sodīt."
+      "targets": "{count, plural, =1 {Sodīts dalībnieks} other {Sodītie dalībnieki}}",
+      "failed_to_mute": "Minētos dalībniekus nebija iespējams sodīt."
+    },
+    "strikes": {
+      "help": {
+        "description": "Просмотреть список активных предупреждений.",
+        "full_description": "Показывает список всех активных предупреждений участников сервера, отсортированных по метке времени.",
+        "examples": [
+          {
+            "description": ""
+          }
+        ]
+      },
+      "no_warns": "на сервере нет активных предупреждений.",
+      "process": "{emote_loading} Получаю список предупреждений...",
+      "warns_list": {
+        "server": "Список предупреждений сервера {guildName}",
+        "user": "Список предупреждений участника {user}"
+      }
     },
     "play": {
       "help": {
@@ -417,35 +551,245 @@
   },
   "events": {
     "interaction_create": {
-      "received": "Šo mijiedarbību izveidoja cits lietotājs.",
+      "received": "Šo mijiedarbību izveidoja cits dalībnieks.",
       "expired": "Šī mijiedarbība vairs nav pieejama, jo tās derīguma termiņš ir beidzies. Ja nepieciešams, izsauciet šo komandu vēlreiz.",
       "failed": {
         "title": "Mijiedarbības kļūda",
         "message": "Šī mijiedarbība ir radījusi kļūdu, operāciju nevar turpināt. Ja problēma turpinās, sazinieties ar atbalsta serveri."
       }
     },
+    "guild_create": {
+      "embed": {
+        "title": "Спасибо за приглашение!",
+        "line_1": "На данный момент меня можно настроить с помощью команд, но очень скоро появится удобная панель управления для настройки вашего прекрасного сервера.",
+        "line_2": "Чтобы узнать о доступных командах, используйте `a.help` или посетите наш сайт."
+      }
+    },
     "message_delete": {
-      "deleted": "Ziņojums ir dzēsts",
-      "executor": "Izdzēsa"
+      "deleted": "Сообщение удалено",
+      "executor": "Удаливший"
     },
     "message_update": {
-      "updated": "Ziņojums ir atjaunināts",
-      "before": "Līdz",
-      "after": "Pēc",
-      "empty_message": "Tukšs ziņojums"
+      "updated": "Сообщение обновлено",
+      "before": "До",
+      "after": "После",
+      "empty_message": "Пустое сообщение"
     }
   },
   "components": {
+    "common": {
+      "back": "Назад",
+      "change": "Изменить",
+      "reset": "Сбросить",
+      "enable": "Включить",
+      "disable": "Выключить"
+    },
     "configuration": {
-      "placeholder": "Izvēlieties opciju",
+      "placeholder": "Выбрать опцию",
       "options": {
-        "general": "Galvenā",
-        "automod": "Automātiska moderēšana",
-        "logs": "Darbību žurnāls"
+        "general": "Основные",
+        "automod": "Автоматическая модерация",
+        "logs": "Журнал действий"
+      }
+    },
+    "reset": {
+      "labels": {
+        "levels_and_messages": "Уровни и сообщения",
+        "currency": "Валюта",
+        "economy_cooldowns": "Временные ограничения в экономике",
+        "voice_activity": "Голосовая активность",
+        "prison": "Тюрьма"
+      },
+      "single_labels": {
+        "levels": "Уровни",
+        "messages": "Сообщения",
+        "currency": {
+          "cash": "Наличные",
+          "bank": "Банк"
+        },
+        "arrest": "Арест"
+      },
+      "actions": {
+        "confirm": "Подтвердить",
+        "cancel": "Отмена"
       }
     },
     "say": {
-      "embed_builder": "Ievietošanas konstruktors"
+      "embed_builder": "Конструктор встраивания"
+    },
+    "settings": {
+      "placeholder": "Выбрать модуль",
+      "options": {
+        "auto-role": {
+          "label": "Автоматические роли",
+          "description": "Выдача ролей при входе на сервер."
+        },
+        "automod": {
+          "label": "Автоматическая модерация",
+          "description": "Настройка фильтров автоматической модерации."
+        },
+        "casino": {
+          "label": "Казино",
+          "description": "Изменение внутренних ограничений."
+        },
+        "color": {
+          "label": "Цвет встраивания",
+          "description": "Управление цветом встраивания Akemi."
+        },
+        "currency": {
+          "label": "Серверная валюта",
+          "description": "Изменение значка валюты."
+        },
+        "music": {
+          "label": "Музыка",
+          "description": "Настройка музыкального сервиса."
+        },
+        "goodbye": {
+          "label": "Прощание"
+        },
+        "language": {
+          "label": "Язык"
+        },
+        "logs": {
+          "label": "Журнал действий"
+        },
+        "notification": {
+          "label": "Оповещения"
+        },
+        "prefix": {
+          "label": "Префикс"
+        },
+        "private": {
+          "label": "Приватные комнаты",
+          "description": "Настройка приватных голосовых комнат."
+        },
+        "saver": {
+          "label": "Восстановление ролей и псевдонимов"
+        },
+        "welcome": {
+          "label": "Приветствие"
+        }
+      },
+      "auto-role": {
+        "placeholder": "Роли не выбраны ({page} страница)",
+        "clear_all_roles": "Очистить все роли"
+      },
+      "automod": {
+        "placeholder": "Выбрать фильтр",
+        "options": {
+          "duplicate": "Дублирование сообщений",
+          "zalgo": "Символы зальго",
+          "emoji": "Эмодзи",
+          "newlines": "Строки",
+          "mentions": "Упоминания",
+          "advertisement": "Рекламирование Discord серверов",
+          "raid_mode": "Модерирование новоприбывших",
+          "ref": "Ссылки перенаправления, Скам & Фишинг"
+        },
+        "edit_filter": "Изменить параметры фильтра",
+        "modal": {
+          "title": "Изменение параметров фильтра",
+          "strike_count": "Количество выдаваемых предупреждений",
+          "default_placeholder": "{count} — по умолчанию",
+          "dupe_delete": "Начинать удаление дубликатов с",
+          "dupe_strike_trash": "Выдавать страйки после достижения дубликатов",
+          "emoji_per_message": "Количество эмодзи в сообщении",
+          "lines_per_message": "Количество строк в сообщении",
+          "max_mentions": "Максимальное количество упоминаний",
+          "time": "Время (в секундах)",
+          "rate_limit_join": "Ограничение скорости присоединения",
+          "rate_placeholder": "{count, plural, one {# присоединение} few {# присоединения} many {# присоединений} other {# присоединений}} — по умолчанию"
+        }
+      },
+      "casino": {
+        "placeholder": "Текущий лимит ставки: {slotsLimit}"
+      },
+      "color": {
+        "placeholder": "Текущий цвет: {hex}"
+      },
+      "currency": {
+        "placeholder": "Текущая валюта сервера",
+        "error": "Ошибка"
+      },
+      "goodbye": {},
+      "language": {
+        "list": {
+          "ar": "Арабский (Саудовская Аравия)",
+          "de": "Немецкий (Германия)",
+          "us": "Английский (США)",
+          "fr": "Французский (Франция)",
+          "kz": "Казахский (Казахстан)",
+          "lv": "Латышский (Латвия)",
+          "ru": "Русский (Россия)",
+          "ru-crazy": "Русский (Юмор версия)",
+          "uk": "Украинский (Украина)"
+        },
+        "click": "Нажмите, чтобы изменить язык",
+        "placeholder": "Выбрать язык"
+      },
+      "logs": {
+        "placeholder": "Выбрать тип действия",
+        "options": {
+          "user": {
+            "label": "Участники",
+            "description": "Регистрирует все действия участников."
+          },
+          "message": {
+            "label": "Сообщения",
+            "description": "Регистрирует изменения в сообщениях на сервере."
+          },
+          "mod": {
+            "label": "Модерирование",
+            "description": "Регистрирует действия модерации."
+          },
+          "voice": {
+            "label": "Голосовая активность",
+            "description": "Регистрирует действия из голосовых каналов."
+          },
+          "invite": {
+            "label": "Приглашения [AkemiPRO]",
+            "description": "Регистрирует переходы по приглашениям."
+          },
+          "confession": {
+            "label": "Признания [AkemiPRO]",
+            "description": "Регистрирует репорты об участниках анонимных сообщений."
+          },
+          "ticket": {
+            "label": "Обращения [AkemiPRO]",
+            "description": "Регистрирует данные об обращениях."
+          }
+        }
+      },
+      "music": {
+        "max_queue_size": "Макс. длина очереди",
+        "dj_roles": "Роли DJ",
+        "modal": {
+          "title": "Изменение максимальной длины очереди",
+          "max_queue_size": "Максимальная длина очереди"
+        }
+      },
+      "notification": {},
+      "prefix": {
+        "placeholder": "Текущий префикс: {prefix}",
+        "modal": {
+          "title": "Изменение префикса",
+          "new_prefix": "Новый префикс"
+        }
+      },
+      "private": {
+        "change_limit": "Изменить лимит",
+        "change_style": "Изменить стиль",
+        "modal": {
+          "title": "Изменение лимита канала",
+          "limit": "Лимит канала (от 0 до 99)"
+        }
+      },
+      "saver": {
+        "roles": "Роли",
+        "nicknames": "Псевдонимы",
+        "strict_roles": "Строгие роли"
+      },
+      "welcome": {}
     },
     "skynet": {
       "add": "Papildināt",
@@ -499,7 +843,7 @@
       }
     },
     "message_update": {
-      "jump_to_message": "Pāriet uz ziņojumu"
+      "jump_to_message": "Перейти к сообщению"
     }
   },
   "services": {

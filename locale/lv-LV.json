@@ -737,6 +737,7 @@
       },
       "logs": {
         "placeholder": "Izvēlieties darbības veidu",
+        "components.settings.logs": "Ivēlēties kanālu",
         "options": {
           "user": {
             "label": "Lietotāji",

@@ -171,7 +171,7 @@
           "reason": {
             "one": "[Privātie kanāli] Privāta kanāla kategorijas izveide",
             "two": "[Privātie kanāli] Standarta ierobežojuma iestatīšana sprūda kanālam",
-            "three": "(ЭТО НУЖНО ПОМЕНЯТЬ!!!!!!) [Privātie kanāli] Включение сервиса приватных комнат Администратором {user}"
+            "three": "[Privātie kanāli] Lietotājs {user} ieslēdza privātie kanāli"
           }
         },
         "limit_changed": "{emote_success} Limits veiksmīgi mainīts."

@@ -1,14 +1,16 @@
 {
   "i18n": {
-    "note": "Visus tulkojumus nodrošina mūsu kopiena. Mēs nevaram garantēt tulkojumu precizitāti un kvalitāti."
+    "note": "Visus tulkojumus izveidoja mūsu kopiena. Mēs nevaram garantēt to pareizību un kvalitāti.\nJa Jūs zināt kādu no valodām, kas pārstāvētas mūsu Github repozitorijā ({url}), būsim priecīgi saņemt Jūsu ieguldījumu Akemi projektā!"
   },
   "common": {
     "moderator": "Moderators",
+    "member": "Lietotājs",
     "author": "Autors",
     "reason": "Iemesls",
     "channel": "Kanāls",
     "duration": "Ilgums",
-    "requester": "Pieprasījums no {user}"
+    "requester": "Pieprasījums no {user}",
+    "target_not_found": "lietotājs nav atrasts."
   },
   "commands": {
     "configuration": {
@@ -17,7 +19,7 @@
       },
       "data_not_found": "Jūsu servera datu bāzē nav.",
       "server_config": "Servera {guildName} konfigurācija",
-      "select_options": "Lai apskatīt servera konfigurāciju, no nolaižamajā sarakstā izvēlējaties opciju.",
+      "select_options": "Lai apskatīt servera konfigurāciju, no nolaižamajā sarakstā atlasiet opciju.",
       "general": {
         "title": "{emote_general} Galvenie",
         "language": "Valoda: `{language}`",
@@ -35,8 +37,8 @@
         "max_newlines": "Maksimālais jaunu rindu skaits: {count}",
         "max_mentions_count": "Maksimālais lomu/lietotāju pieminējumu skaits: {count}",
         "dupe_limit": "Limits: {count, plural, one {# ziņa} few {# ziņas} many {# ziņas} other {# ziņas}}",
-        "dupe_strike_trash": "Izdot brīdinājumu pēc tam, kad sasniegts limits būs: {count, plural, one {# ziņa} few {# ziņas} many {# ziņas} other {# ziņas}}",
-        "emoji_limit_per_message": "Emodži ierobežojums 1 ziņojumam: {count}",
+        "dupe_strike_trash": "Izdot brīdinājumu pēc tam, kad limits sasniegs: {count, plural, one {# ziņa} few {# ziņas} many {# ziņas} other {# ziņas}}",
+        "emoji_limit_per_message": "Emoji ierobežojums 1 ziņojumam: {count}",
         "rate_limit_join": "Limits: {count, plural, one {# pievienošana} few {# pievienošanās} many {# pievienošanās} other {# pievienošanās}}",
         "join_time": "Laiks: {time}"
       },
@@ -46,12 +48,19 @@
     },
     "mutes": {
       "help": {
-        "description": "Skatīt sodīto lietotāju sarakstu."
+        "description": "Apskatīt sodīto lietotāju sarakstu."
       },
       "process": "{emote_loading} Informācijas iegūšana...",
       "no_member_in_timeouts": "Pašlaik nav sodītu lietotāju.",
       "member_timeouts": "Sodītie lietotāji",
       "expires": "{emote_timeout} Beidzas: {time}"
+    },
+    "reset": {
+      "help": {
+        "description": "Atiestatīt lietotāja progresu līdz nullei"
+      },
+      "select_menu_option": "No nolaižamajā sarakstā atlasiet opciju.",
+      "warning": "{emote_warn} Šī darbība ir neatgriezeniska, nospiediet attiecīgo pogu, lai atiestatīt progresu."
     },
     "say": {
       "help": {
@@ -65,9 +74,125 @@
           }
         ]
       },
-      "no_content": "ievadiet tekstu, lai nosūtītu ziņojumu."
+      "no_content": "ievadiet tekstu, lai nosūtītu ziņojumu.",
+      "failed_to_parse": "ziņojuma tekstu nevar atpazīt."
     },
-    "settings": {},
+    "settings": {
+      "help": {
+        "description": "Robota moduļu iestatīšana"
+      },
+      "title": "Servera iestatījumi",
+      "description": "Lai konfigurētu serveri, izmantojiet nolaižamo atlases izvēlni.",
+      "auto-role": {
+        "failed_to_get_roles": "{emote_error} Lomu sarakstu neizdevās iegūt. Iespējams, robotam nav tiesību vai arī ir bojāta lomu hierarhija.",
+        "title": "Automātiskās lomas",
+        "description": {
+          "line_1": "Lomas nolaižamajā sarakstā ir **izvēlētas**, ja tās jau tiek izmantotas piešķiršanai.\n",
+          "line_2": "Izmantojiet pogas, lai pārvaldītu izvēlnes lapas.",
+          "line_3": "Kopā **{count, plural, one {# loma} few {# lomas} many {# lomas} other {# lomas}}**."
+        },
+        "pro": {
+          "title": "{emote_boost} Vēlaties piešķirt vairāk lomu?",
+          "description": "Ar AkemiPRO var piešķirt līdz 25 lomām."
+        },
+        "successfully_updated": "{emote_success} Automātisko lomu saraksts ir veiksmīgi atjaunināts."
+      },
+      "automod": {
+        "title": "Automātiska moderēšana",
+        "description": "Izvēlieties filtru, kuru vēlaties pielāgot."
+      },
+      "casino": {
+        "title": "Kazino",
+        "description": "Izmantojot spēļu automātu komandu, maksimālā likme ir **150**, taču to var mainīt uz lielāku likmi.",
+        "specify_rate": "Norādiet jauno likmi.",
+        "specify_real_number": "Norādiet reālu skaitli.",
+        "rate_range": "Ievadiet maksimālo likmi no **150** līdz **100,000**",
+        "rate_changed": "{emote_success} Likme `{rate}` ir veiksmīgi saglabāta."
+      },
+      "color": {
+        "title": "Krāsu iestrādāšana",
+        "description": "Kad izmantojat komandas, robots pēc noklusējuma parāda ieliktņus, kuriem ir neredzama krāsa.\n\nVarat iestatīt krāsu, lai tā atbilst Jūsu kopienas tēmai.",
+        "specify_hex": "Norādiet jaunu krāsu `hex` formātā. Piemēram: `#976767`",
+        "invalid_hex": "Nevar iegūt informāciju par šo krāsu. Lūdzu, mēģiniet vēlreiz.",
+        "hex_equal_current": "Jūs esat norādījusi to pašu krāsu, kuru jau tiek izmantota. Lūdzu, mēģiniet vēlreiz.",
+        "hex_changed": "{emote_success} Krāsa `#{hex}` ir veiksmīgi mainīta.",
+        "hex_default_changed": "{emote_success} Noklusējuma iestrādes krāsa ir veiksmīgi mainīta."
+      },
+      "currency": {
+        "title": "Servera valūta",
+        "description": "Ļauj mainīt servera valūtas ikonu, kas parādās komandās no kategorijas \"ekonomika\".",
+        "error": {
+          "title": "{emote_warn} Tika atklāta kļūda",
+          "description": "Akemi nevarēja atrast pašlaik izmantoto emoji. Mēs iesakām to mainīt, lai izvairītos no nepareizās attēlošanas."
+        },
+        "specify_currency": "Norādiet jaunu emoji, kas tiks izmantota kā indikators ekonomikas komandās.",
+        "emoji_not_found": "Es nevarēju atrast šādu emoji.",
+        "currency_changed": "Servera valūta ir veiksmīgi nomainīta."
+      },
+      "goodbye": {},
+      "logs": {
+        "failed_to_get_channels": "Pieejamo kanālu sarakstu neizdevās iegūt. Robotam var būt nav tiesību.",
+        "title": "Darbību žurnāls",
+        "description": {
+          "line_1": "Tie ir dažādi veida notikumi, kas tiek izraisīti, dzēšot ziņojumus, izmantojot komandas un moderēšanas darbības, ļaujot moderatoriem un administratoriem iegūt detalizētu informāciju par veiktajām darbībām.\n\n",
+          "line_2": "Zaļais indikators (<:online:815270641078108160>) sarakstā norāda, ka šī darbība jau ir aktīva un nosūta kanālam noderīgu informāciju.\n\n",
+          "line_3": "Izmantojiet pogas, lai pārvaldītu saraksta lapas."
+        },
+        "updated": "{emote_success} Iestatījumi ir veiksmīgi atjaunināti."
+      },
+      "music": {
+        "title": "Mūzika",
+        "description": {
+          "line_1": "Maksimālais rindas garums pašlaik ir: {maxQueue}\n",
+          "line_2": "Dj lomas: {djRoles}"
+        },
+        "pro": {
+          "title": "{emote_boost} Vēlaties izveidot vairāk Dj lomu?",
+          "description": "Ar AkemiPRO varat iestatīt līdz 5 lomām."
+        },
+        "max_queue_changed": "{emote_success} Maksimālais rindas garums ir veiksmīgi mainīts."
+      },
+      "notification": {},
+      "prefix": {
+        "title": "Prefikss",
+        "description": "Iestatiet prefiksu, uz kuru robots reaģēs, kad tiks izsaukta komanda.",
+        "prefix_changed": "{emote_success} Prefikss ir veiksmīgi mainīts."
+      },
+      "private": {
+        "title": "Privātie balss kanāli",
+        "description": "Tas ir laika kanāli, kas tiek izveidotas, kad ieejat sprūda kanālā, un tiek dzēstas, ja tajās nav lietotāju.",
+        "perms_required": "{emote_error} Vispirms piešķiriet man atbilstošas tiesības (`Pārvaldīt kanālus').",
+        "room": "Privātie balss kanāli",
+        "data": {
+          "name": {
+            "one": "Izveidot kanālu [+]",
+            "two": "Akemi kanālu pārvaldība"
+          },
+          "reason": {
+            "one": "[Privātie kanāli] Privāta kanāla kategorijas izveide",
+            "two": "[Privātie kanāli] Standarta ierobežojuma iestatīšana sprūda kanālam",
+            "three": "[Privātie kanāli] Lietotājs {user} ieslēdza privātie kanāli"
+          }
+        },
+        "limit_changed": "{emote_success} Limits veiksmīgi mainīts."
+      },
+      "saver": {
+        "title": "Lietotāja datu atjaunošana",
+        "description": "Šis pakalpojums ir atbildīgs par lietotāja datu atgūšanu. Lomu un aizstājvārdu, ja tādi ir.",
+        "strict_roles": {
+          "title": "Stingras lomas {emote_new}",
+          "description": "Iestatiet lomas, kuras nedrīkst atjaunot, kad lietotājs atgriežas uz serveri."
+        },
+        "pro": {
+          "title": "{emote_boost} Vēlaties iestatīt vairāk stingras lomas?",
+          "description": "Ar AkemiPRO varat iestatīt līdz 30 lomām."
+        }
+      },
+      "welcome": {}
+    },
+    "relation": {
+      "help": {}
+    },
     "skynet": {
       "help": {
         "description": "Izdomāt stāstu ar neironu tīkla palīdzību."
@@ -111,7 +236,7 @@
       "command_info": "Informācija par komandu {commandName}",
       "full_description": "Pilns apraksts",
       "aliases": "Aliases `{aliases}`",
-      "rate_limit_time": "Pārlādēšanas laiks: `{time}`",
+      "rate_limit_time": "Atjaunošanas laiks: `{time}`",
       "usage": "Lietošana: `{usage}`",
       "permissions": {
         "bot": "Robota tiesības",
@@ -124,7 +249,7 @@
       },
       "premium": {
         "title": "{emote_boost} Komanda premium serveriem",
-        "description": "Lai izmantotu šo komandu, serverī jābūt aktivizētai Akemi PRO paketei."
+        "description": "Lai izmantotu šo komandu, serverī jābūt aktivizētai AkemiPRO paketei."
       },
       "command_available_list": "Pieejamo komandu saraksts",
       "categories": [
@@ -141,15 +266,15 @@
     },
     "invite": {
       "help": {
-        "description": "Saņemiet Akemi ielūguma saiti."
+        "description": "Saņemt Akemi ielūguma saiti."
       },
-      "description": "Akemi ir daudzfunkcionāls robots, kas izstrādāts, lai uzlabotu un aizsargātu jūsu Discord serveri.\n\nNepārprotami uzdodiet jautājumus mūsu oficiālajā serverī. Mēs vienmēr esam gatavi rast risinājumu jūsu problēmai!",
+      "description": "Akemi ir daudzfunkcionāls robots, kas izstrādāts, lai uzlabotu un aizsargātu Jūsu Discord serveri.\n\nNepārprotami uzdodiet jautājumus mūsu oficiālajā serverī. Mēs vienmēr esam gatavi atrisināt Jūsu problēmu!",
       "monitoring": "{emote_partner} Monitoringi",
       "developer": "{emote_dev} Izstrādātāji"
     },
     "invites": {
       "help": {
-        "description": "Skatiet statistiku par izsekotajiem ielūgumiem.",
+        "description": "Apskatīt statistiku par izsekotajiem ielūgumiem.",
         "examples": [
           {
             "description": "Tiek parādīta lietotāja Monix ielūgumu statistika."
@@ -171,7 +296,7 @@
       "calculating": "{emote_loading} Aprēķinu...",
       "cluster": "Klasteris: **{instanceName}** ({id}/{total})",
       "shards": "Segmenti: [ {shard_list} ]",
-      "latency": "— Aizkavēšana: {latency}ms",
+      "latency": "— Kavēšanas: {latency}ms",
       "command_reply": "— Komandu apstrāde: {latency}ms",
       "database": "— Datubāze: {latency}ms"
     },
@@ -179,11 +304,11 @@
       "help": {
         "description": "Noskaidrojiet, cik daudz laika ir atlicis līdz nākamajam apa/bumpam."
       },
-      "module_disabled": "šajā serverī nav aktivizēts atgādinājumu modulis.",
+      "module_disabled": "ši serverī nav aktivizēts atgādinājumu modulis.",
       "title": "Atgādinājumi",
       "process": "{emote_loading} Informācijas iegūšana...",
       "no_data": "Nav datu.",
-      "its_time": "Ir pienācis laiks bump!",
+      "its_time": "Ir pienācis laiks bumpam!",
       "not_found": "{emote_error} Nebija iespējams iegūt neviena robota vai atgādinājuma datus."
     },
     "server-info": {
@@ -208,8 +333,8 @@
       "verification_level": "{emote_verified} Pārbaudes līmenis: {level}",
       "created": "{emote_paint} Izveidots: {createdAt}",
       "total_channels": "{emote_text} Kopā {count, plural, one {# kanāls} few {# kanāli} many {# kanāli} other {# kanāli}}",
-      "boost": "Discord Boosti",
-      "boost_level": "{emote_boost} Līmenis: **{level}** (boosti — {count})",
+      "boost": "Discord Boost",
+      "boost_level": "{emote_boost} Līmenis: **{level}** (boost — {count})",
       "main": "Galvenais",
       "users": {
         "title": "Lietotāji",
@@ -234,7 +359,7 @@
         "description": "Apskatīt informāciju par lietotāju.",
         "examples": [
           {
-            "description": "Tiek parādīta informācija par lietotāju, kurš izsauca komandu."
+            "description": "Tiek parādīta informācija par lietotāju, kas izsauca komandu."
           },
           {
             "description": "Tiek parādīta informācija par lietotāju Monix#666."
@@ -248,7 +373,7 @@
       "intents": "Priviliģēti nodomi:",
       "member_voice": "{emote_voice} Atrodas balss kanālā: {channel}",
       "timeout_end": "{emote_timeout} Sods beigsies: {end}",
-      "server_avatar": "{emote_slash} Embeda tiek parādīts arī lietotāja galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi.",
+      "server_avatar": "{emote_slash} Embeda tiek parādīts arī lietotāja galvenais avatārs, jo ir mainīti viņa servera profila iestatījumi",
       "invited": "Uzaicināja",
       "joined": "Pievienojās",
       "created": "Konts izveidots",
@@ -261,7 +386,7 @@
         "description": "Bloķēt lietotāju",
         "examples": [
           {
-            "description": "Bloķēt 2 lietotājus ar iemeslu: Reklāma."
+            "description": "Bloķēt 2. lietotājus ar iemeslu: Reklāma."
           },
           {
             "description": "Bloķēt lietotāju ar Id 6656666141206868294676 šādu iemeslu dēļ: Apvainojums."
@@ -310,7 +435,24 @@
       "type": "Sods",
       "updated": "Atjaunots",
       "targets": "{count, plural, =1 {Sodīts lietotājs} other {Sodītie lietotāji}}",
-      "failed_to_mute": "Minētos lietotājus nebija iespējams sodīt."
+      "failed_to_mute": "Neizdevās sodīt norādītos lietotājus."
+    },
+    "strikes": {
+      "help": {
+        "description": "Skatīt aktīvo brīdinājumu sarakstu.",
+        "full_description": "Tiek parādīts visu aktīvo servera lietotāju brīdinājumu saraksts, kas sakārtots pēc laika zīmoga.",
+        "examples": [
+          {
+            "description": ""
+          }
+        ]
+      },
+      "no_warns": "serverā nav aktīvu brīdinājumu.",
+      "process": "{emote_loading} Brīdinājumu saraksta saņemšana...",
+      "warns_list": {
+        "server": "Servera {guildName} brīdinājumu saraksts",
+        "user": "Lietotāju {user} brīdinājumu saraksts"
+      }
     },
     "play": {
       "help": {
@@ -322,19 +464,19 @@
         ]
       },
       "query_required": "norādiet dziesmas nosaukumu vai url.",
-      "voice_required": "Lai izmantotu šo komandu, jums jābūt balss kanālā.",
+      "voice_required": "Lai izmantotu šo komandu, Jums jābūt balss kanālā.",
       "voice_join": "lūdzu, pievienojieties balss kanālam {channel}.",
       "node_is_unavailable": "mūzikas serveris pašlaik nav pieejams, sazinieties ar atbalsta serveri.",
       "not_allowed_link": "šī saite nav iekļauta atļauto saišu sarakstā, norādiet citu saiti.",
       "searching_tracks": "{emote_loading} Dziesmas meklēšana...",
-      "search_is_unavailable": "{emote_warn} Šāda veida meklēšana pašlaik nav pieejama...\n\n{emote_loading} Meklēju līdzīgas dziesmas Jūsu pieprasījumā......",
-      "search_yandex": "Meklēšanas režīms — {emote_yandex} Yandex Music\n\n{emote_warn} Mūzikas ieraksts rindā var aizņemt kādu laiku....",
+      "search_is_unavailable": "{emote_warn} Šāda veida meklēšana pašlaik nav pieejama...\n\n{emote_loading} Meklēju līdzīgas dziesmas Jūsu pieprasījumā...",
+      "search_yandex": "Meklēšanas režīms — {emote_yandex} Yandex Music\n\n{emote_warn} Mūzikas ieraksts rindā var aizņemt kādu laiku...",
       "search_soundcloud": "Meklēšanas režīms {emote_soundcloud} SoundCloud",
       "track_added": "{emote_platform} Dziemsa {track} pievienota rindai.",
       "playlist_added": "{emote_platform} Dziesmas saraksts {playlist} pievienots rindai.",
       "search_result": "{emote_platform} Es atradu {tracks, plural, one {# dziesmu} few {# dziesmas} many {# dziesmas} other {# dziesmas}} Jūsu pieprasījumā.",
       "successfully_added": "Dziesmas numurs {n} veiksmīgi pievienots servera rindai.",
-      "no_matches": "{emote_error} {user}, jūsu pieprasījumam atbilstošas dziesmas netika atrastas.",
+      "no_matches": "{emote_error} {user}, Jūsu pieprasījumam atbilstoša dziesma netika atrasta.",
       "load_failed": "{emote_error} {user}, neizdevās ielādēt izvēlētās dziesmas."
     },
     "queue": {
@@ -364,7 +506,7 @@
         "description": "Attīt dziesmu.",
         "examples": [
           {
-            "description": "Attīt pašreizējo dziesmu uz pozīciju 2:00."
+            "description": "Attīt pašreizējo dziesmu uz pozīciju 2:00"
           }
         ]
       },
@@ -375,7 +517,7 @@
     },
     "reminder": {
       "reminder": "Atgādinājums",
-      "empty_list": "jums nav atgādinājumu.",
+      "empty_list": "Jums nav atgādinājumu.",
       "list": {
         "title": "Atgādinājumi {user}",
         "description": "Pārvaldiet savus atgādinājumus, izmantojot nolaižamo sarakstu.",
@@ -387,15 +529,15 @@
         "channel": "{emote_chat} Tiks piegādāts uz kanālu {channel}."
       },
       "reminders_not_found": "Netika atrasti nekādi atgādinājumi. Iespējams, tie jau ir piegādāti.",
-      "failed_to_delete": "Atgādinājumus nevarēja dzēst. Iespējams, tie jau ir piegādāti.",
-      "successfully_deleted": "Es dzēsu {deletedLength, plural, one {# atgādinājums} few {# atgādinājumi} many {# atgādinājumi} other {# atgādinājumi}}.",
-      "successfully_created_reminder_dm": "{emote_alarm} Labi, es jums par to nosūtīšu vēstuli. {time}.",
-      "successfully_created_reminder_channel": "{emote_alarm} Labi, es tevi pieminēšu šeit par to {time}.",
+      "failed_to_delete": "Atgādinājumus neizdevās dzēst. Iespējams, tie jau ir piegādāti.",
+      "successfully_deleted": "Es izdzēsu {deletedLength, plural, one {# atgādinājums} few {# atgādinājumi} many {# atgādinājumi} other {# atgādinājumi}}.",
+      "successfully_created_reminder_dm": "{emote_alarm} Labi, es Jums par to nosūtīšu vēstuli {time}.",
+      "successfully_created_reminder_channel": "{emote_alarm} Labi, es Tevi pieminēšu šeit par to {time}.",
       "cancelled_operation": "{emote_error} Operācija tika atcelta.",
-      "reached_limit": "jūs esat sasniedzis jaunu atgādinājumu izveides limitu.",
+      "reached_limit": "Jūs esat sasniedzis jaunu atgādinājumu izveides limitu.",
       "invalid_time": "laiks nav noteikts.",
       "invalid_time_0s": "atgādinājuma laiks nevar būt mazāks par 0.",
-      "invalid_time_1y": "atgādinājuma termiņam nevar pārsniegt 1 gadu.",
+      "invalid_time_1y": "atgādinājuma termiņš nevar pārsniegt 1. gadu.",
       "select_method_send": "Izvēlaties, kā atgādinājums tiks piegādāts.",
       "time": "Atgādinājuma laiks",
       "content": "Saturs",
@@ -424,18 +566,32 @@
         "message": "Šī mijiedarbība ir radījusi kļūdu, operāciju nevar turpināt. Ja problēma turpinās, sazinieties ar atbalsta serveri."
       }
     },
+    "guild_create": {
+      "embed": {
+        "title": "Paldies par ielūgumu!",
+        "line_1": "Šobrīd mani var iestatīt ar komandām, bet pavisam drīz būs ērts vadības panelis, lai iestatītu savu serveri.",
+        "line_2": "Lai uzzinātu par pieejamajām komandām, izmantojiet `a.help` vai apmeklējiet mūsu tīmekļa vietni."
+      }
+    },
     "message_delete": {
       "deleted": "Ziņojums ir dzēsts",
       "executor": "Izdzēsa"
     },
     "message_update": {
       "updated": "Ziņojums ir atjaunināts",
-      "before": "Līdz",
+      "before": "Pirms",
       "after": "Pēc",
       "empty_message": "Tukšs ziņojums"
     }
   },
   "components": {
+    "common": {
+      "back": "Atpakaļ",
+      "change": "Mainīt",
+      "reset": "Atiestatīt",
+      "enable": "Ieslēgt",
+      "disable": "Izslēgt"
+    },
     "configuration": {
       "placeholder": "Izvēlieties opciju",
       "options": {
@@ -444,8 +600,205 @@
         "logs": "Darbību žurnāls"
       }
     },
+    "reset": {
+      "labels": {
+        "levels_and_messages": "Līmeņi un ziņojumi",
+        "currency": "Valūta",
+        "economy_cooldowns": "Laika ierobežojumi ekonomikā",
+        "voice_activity": "Balss aktivitāte",
+        "prison": "Cietums"
+      },
+      "single_labels": {
+        "levels": "Līmeņi",
+        "messages": "Ziņojumi",
+        "currency": {
+          "cash": "Skaidrā naudā",
+          "bank": "Bankā"
+        },
+        "arrest": "Arests"
+      },
+      "actions": {
+        "confirm": "Apstiprināt",
+        "cancel": "Atcelt"
+      }
+    },
     "say": {
-      "embed_builder": "Ievietošanas konstruktors"
+      "embed_builder": "Iebūvējamais konstruktors"
+    },
+    "settings": {
+      "placeholder": "Izvēlieties moduli",
+      "options": {
+        "auto-role": {
+          "label": "Automātiskās lomas",
+          "description": "Lomu piešķiršana, kad piesakāties serverī."
+        },
+        "automod": {
+          "label": "Automātiska moderēšana",
+          "description": "Automātiskās moderēšanas filtru iestatīšana."
+        },
+        "casino": {
+          "label": "Kazino",
+          "description": "Iekšējo ierobežojumu maiņa."
+        },
+        "color": {
+          "label": "Krāsu iestrādāšana",
+          "description": "Akemi iestrādes krāsu iestrādāšana."
+        },
+        "currency": {
+          "label": "Servera valūta",
+          "description": "Valūtas ikonas maiņa."
+        },
+        "music": {
+          "label": "Mūzika",
+          "description": "Mūzikas pakalpojuma iestatīšana."
+        },
+        "goodbye": {
+          "label": "Atvads"
+        },
+        "language": {
+          "label": "Valoda"
+        },
+        "logs": {
+          "label": "Darbību žurnāls"
+        },
+        "notification": {
+          "label": "Paziņojumi"
+        },
+        "prefix": {
+          "label": "Prefikss"
+        },
+        "private": {
+          "label": "Privātie kanāli",
+          "description": "Privātu balss kanālu iestatīšana."
+        },
+        "saver": {
+          "label": "Lomu un aizstājvārdu atjaunošana"
+        },
+        "welcome": {
+          "label": "Sveicieni"
+        }
+      },
+      "auto-role": {
+        "placeholder": "Lomas nav atlasītas ({page} lapa)",
+        "clear_all_roles": "Izdzēst visas lomas"
+      },
+      "automod": {
+        "placeholder": "Izvēlieties filtru",
+        "options": {
+          "duplicate": "Ziņojumu dublēšanās",
+          "zalgo": "Zalgo simboli",
+          "emoji": "Emoji",
+          "newlines": "Līnijas",
+          "mentions": "Minējumi",
+          "advertisement": "Discord serveru reklāma",
+          "raid_mode": "Jaunu lietotāju moderēšana",
+          "ref": "Atsauces saites, krāpšana & pikšķerēšana"
+        },
+        "edit_filter": "Filtra iestatījumu maiņa",
+        "modal": {
+          "title": "Filtra parametru maiņa",
+          "strike_count": "Izteikto brīdinājumu skaits",
+          "default_placeholder": "{count} — pēc noklusējuma",
+          "dupe_delete": "Sākt dzēst dublikātus no",
+          "dupe_strike_trash": "Brīdinājuma izdošana pēc dublikātu sasniegšanas",
+          "emoji_per_message": "Emoji skaits ziņojumā",
+          "lines_per_message": "Ziņojuma rindu skaits",
+          "max_mentions": "Maksimālais pieminējumu skaits",
+          "time": "Laiks (sekundēs)",
+          "rate_limit_join": "Pievienošanas ātruma ierobežojums",
+          "rate_placeholder": "{count, plural, one {# pievienošana} few {# pievienošanas} many {# pievienošanas} other {# pievienošanas}} — pēc noklusējuma"
+        }
+      },
+      "casino": {
+        "placeholder": "Pašreizējais likmes ierobežojums: {slotsLimit}"
+      },
+      "color": {
+        "placeholder": "Pašreizējā krāsa: {hex}"
+      },
+      "currency": {
+        "placeholder": "Pašreizējā servera valūta",
+        "error": "Kļūda"
+      },
+      "goodbye": {},
+      "language": {
+        "list": {
+          "ar": "Arābu (Saūda Arābija)",
+          "de": "Vācu (Vācija)",
+          "us": "Angļu (ASV)",
+          "fr": "Franču (Francija)",
+          "kz": "Kazahstāna (Kazahstāna)",
+          "lv": "Latviešu (Latvija)",
+          "ru": "Krievu (Krievija)",
+          "ru-crazy": "Krievu (humora versija)",
+          "uk": "Ukraiņu (Ukraina)"
+        },
+        "click": "Nospiediet, lai mainītu valodu",
+        "placeholder": "Izvēlieties valodu"
+      },
+      "logs": {
+        "placeholder": "Izvēlieties darbības veidu",
+        "placeholder_channel": "Ivēlēties kanālu",
+        "options": {
+          "user": {
+            "label": "Lietotāji",
+            "description": "Registrē visas lietotāja darbības."
+          },
+          "message": {
+            "label": "Ziņojumi",
+            "description": "Registrē izmaiņas servera ziņojumos."
+          },
+          "mod": {
+            "label": "Moderēšana",
+            "description": "Reģistrē moderēšanas darbības."
+          },
+          "voice": {
+            "label": "Balss aktivitāte",
+            "description": "Reģistrē balss kanālu darbības."
+          },
+          "invite": {
+            "label": "Ielūgumi [AkemiPRO]",
+            "description": "Reģistrē pievienošanas pēc ielūguma."
+          },
+          "confession": {
+            "label": "Pateicības [AkemiPRO]",
+            "description": "Reģistrē ziņojumus par anonīmiem ziņojumiem."
+          },
+          "ticket": {
+            "label": "Aicinājums [AkemiPRO]",
+            "description": "Reģistrē datus par aicinājumiem."
+          }
+        }
+      },
+      "music": {
+        "max_queue_size": "Maksimālais rindas garums",
+        "dj_roles": "DJ lomas",
+        "modal": {
+          "title": "Maksimālā rindas garuma maiņa",
+          "max_queue_size": "Maksimālais rindas garums"
+        }
+      },
+      "notification": {},
+      "prefix": {
+        "placeholder": "Pašreizējais prefikss: {prefix}",
+        "modal": {
+          "title": "Prefiksa maiņa",
+          "new_prefix": "Jauns prefikss"
+        }
+      },
+      "private": {
+        "change_limit": "Mainīt ierobežojumu",
+        "change_style": "Mainīt stilu",
+        "modal": {
+          "title": "Kanāla ierobežojuma maiņa",
+          "limit": "Kanāla ierobežojums (0 līdz 99)"
+        }
+      },
+      "saver": {
+        "roles": "Lomas",
+        "nicknames": "Aizstājvārdi",
+        "strict_roles": "Stingras lomas"
+      },
+      "welcome": {}
     },
     "skynet": {
       "add": "Papildināt",
@@ -505,7 +858,7 @@
   "services": {
     "automod": {
       "spamming": "lūdzu, nesūtiet surogātpastu.",
-      "zalgo": "šis serveris neļauj sūtīt zalgo simboli..",
+      "zalgo": "šis serveris neļauj sūtīt zalgo simboli.",
       "advertising": "Discord ielūgumi šajā serverī nav atļauti.",
       "phishing": "šajā serverī nav atļauts izmantot pikšķerēšanas saites.",
       "referral": "šajā serverī nav atļautas pāradresācijas saites.",
@@ -571,7 +924,7 @@
       },
       "re_sync": {
         "title": "Atkārtota sinhronizēšana...",
-        "load_balancer": "Neuztraucieties, mēs atjaunosim jūsu darbību!\nSlodzes līdzsvarošanas process var aizņemt kādu laiku.",
+        "load_balancer": "Neuztraucieties, mēs atjaunosim Jūsu darbību!\nSlodzes līdzsvarošanas process var aizņemt kādu laiku.",
         "reconnecting": {
           "description": "Kaut kas ir noticis nepareizi. Mēģinājums atjaunot iepriekšējo savienojumu",
           "success": "Savienojums atjaunots",

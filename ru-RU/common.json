@@ -1,0 +1,14 @@
+{
+  "embed_builder": "Конструктор вставки",
+  "requester": "Запрос от {user}",
+  "moderator": "Модератор",
+  "administrator": "Администратор",
+  "server_owner": "Создатель сервера",
+  "bot": "Бот",
+  "back": "Назад",
+  "enable": "Включить",
+  "disable": "Выключить",
+  "channels": "Каналы",
+  "roles": "Роли",
+  "clear": "Очистить"
+}

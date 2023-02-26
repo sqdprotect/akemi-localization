@@ -1,0 +1,27 @@
+{
+  "description": "Обнулить прогресс участников.",
+  "select_menu_placeholder": "Выберите опцию из выпадающего списка.",
+  "single_reset": "Обнуление прогресса участника {user}",
+  "warning_alert": "{emote_warn} Это действие необратимо, для сброса прогресса нажмите соответствующую кнопку.",
+  "labels": {
+    "levels_and_messages": "Уровни и сообщения",
+    "currency": "Игровая валюта",
+    "economy_cooldowns": "Ограничения в экономике",
+    "prison": "Тюрьма",
+    "invites": "Приглашения",
+    "voice_activity": "Голосовая активность"
+  },
+  "single_labels": {
+    "levels": "Уровни",
+    "messages": "Сообщения",
+    "currency": {
+      "cash": "Наличные",
+      "bank": "Банк"
+    },
+    "arrest": "Арест"
+  },
+  "actions": {
+    "confirm": "Подтвердить",
+    "cancel": "Отмена"
+  }
+}

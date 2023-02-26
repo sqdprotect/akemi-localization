@@ -1,0 +1,19 @@
+{
+  "description": "Принять идею.",
+  "examples": [
+    {
+      "usage": "accept 34 Отличная идея!",
+      "description": "Принять идею с id 34 с вердиктом \"Отличная идея!\""
+    },
+    {
+      "usage": "accept 34",
+      "description": "Принять идею с id 34"
+    }
+  ],
+  "specify_id": "укажите id идеи.",
+  "to_many_text_characters": "вердикт не может быть длиннее 1024 символов.",
+  "suggestions_not_found": "идея с таким id не найдена. Убедитесь, что идентификатор идеи указан правильно.",
+  "processing": "{emote_loading} Обрабатываю...",
+  "successfully_processed": "{emote_success} Идея с #**{id}** обработана.",
+  "failed_to_process": "произошла ошибка при обработке идеи #**${id}**."
+}

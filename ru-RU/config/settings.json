@@ -1,0 +1,26 @@
+{
+  "description": "Настройка модулей бота.",
+  "embed_description": "Взаимодействуйте с выпадающим меню выбора, чтобы настроить сервер.",
+  "select_menu_placeholder": "",
+  "labels": {
+    "auto_role": "Автоматически-назначаемые роли",
+    "moderation": "Модерация",
+    "bump_reminder": "Напоминания",
+    "economy": "Экономика",
+    "system_message_color": "Цвет системных сообщений",
+    "commands": "Команды",
+    "anonymous_confessions": "Анонимные признания",
+    "music": "Музыка",
+    "notifications": "Оповещения",
+    "interactive_messages": "Интерактивные сообщения",
+    "levels": "Рейтинг",
+    "language": "Язык",
+    "logs": "Журнал действий",
+    "prefix": "Префикс",
+    "private_rooms": "Приватные комнаты",
+    "reaction_roles": "Роли за реакцию",
+    "restoring_data": "Восстановление данных",
+    "suggestions": "Идеи",
+    "tickets": "Обращения"
+  }
+}

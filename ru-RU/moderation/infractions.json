@@ -1,0 +1,36 @@
+{
+  "help": {
+    "description": "Управление наказаниями.",
+    "examples": [
+      {
+        "description": "Получить информацию о наказании."
+      },
+      {
+        "description": "Поиск наказаний пользователя."
+      },
+      {
+        "description": "Поиск наказаний, выданных модератором."
+      },
+      {
+        "description": "Удалить наказание."
+      },
+      {
+        "description": "Обновить наказание."
+      }
+    ]
+  },
+  "infraction": "**Наказание:** ",
+  "infraction_expiration": "**Длительность наказания:** ",
+  "infraction_id": "**Идентификатор:** ",
+  "infraction_reason": "**Причина:** ",
+  "infraction_moderator": "**Модератор:**",
+  "infraction_last_updated": "**Последнее обновление:**",
+  "searching_infraction": "Поиск нарушения...",
+  "enter_infraction_id": "укажите идентификатор наказания.",
+  "infraction_not_found": "наказание с таким идентификатором не найдено.",
+  "infractions_not_found": "наказания не найдены.",
+  "infraction_updated": "Наказание с идентификатором {id} успешно обновлено.",
+  "infraction_deleted": "Наказание с идентификатором {id} успешно удалено.",
+  "enter_new_reason": "укажите новую причину.",
+  "infraction_inactive": "это наказание более не активно."
+}

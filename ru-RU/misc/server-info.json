@@ -1,0 +1,38 @@
+{
+  "help": {
+    "description": "Информация о сервере."
+  },
+  "verification_levels": {
+    "0": "Отсутствует",
+    "1": "Низкий",
+    "2": "Средний",
+    "3": "Высокий",
+    "4": "Самый высокий"
+  },
+  "channels": {
+    "text": "{emote_text} Текстовые каналы: {count}",
+    "voice": "{emote_voice} Голосовые каналы: {count}",
+    "stage": "{emote_stage} Трибуны: {count}",
+    "announce": "{emote_announce} Новостные каналы: {count}",
+    "category": "{emote_category} Категории: {count}"
+  },
+  "owner": "{emote_owner} Создатель: {user}",
+  "verification_level": "{emote_verified} Уровень проверки: {level}",
+  "created": "{emote_paint} Создан: {createdAt}",
+  "total_channels": "{emote_text} Всего {count, plural, one {# канал} few {# канала} many {# каналов} other {# каналов}}\n",
+  "boost": "Бусты",
+  "boost_level": "{emote_boost} Уровень: **{level}** (бустов — {count})",
+  "main": "Основное",
+  "users": {
+    "title": "Пользователи",
+    "total": "{emote_member} Всего {count, plural, one {# пользователь} few {# пользователя} many {# пользователей} other {# пользователей}}",
+    "bots": "Ботов: {count}",
+    "members": "Участников: {count}"
+  },
+  "additional_features": "Дополнительные возможности",
+  "features": {
+    "pro": "Бонусные возможности **AkemiPro**.",
+    "experimental_features": "Доступны экспериментальные функции.",
+    "allow_other_transfers": "Доступны переводы валюты с других серверов."
+  }
+}

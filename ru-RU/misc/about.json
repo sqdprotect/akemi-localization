@@ -1,0 +1,15 @@
+{
+  "help": {
+    "description": "Посмотреть информацию о боте"
+  },
+  "version": "Версия: {version}",
+  "developers": "{emote_dev} Разработчики",
+  "monitoring": "{emote_partner} Мониторинги",
+  "description": "Akemi — это многофункциональный бот, предназначенный для улучшения и защиты вашего Discord сервера.",
+  "build_info": "Информация о сборке",
+  "build_hash": "Хэш: `{hash}`",
+  "build_date": "Дата сборки: {buildDataD} ({buildDataR})",
+  "website": "Веб-сайт",
+  "invite_bot": "Пригласить бота",
+  "support_server": "Сервер поддержки"
+}

@@ -1,0 +1,7 @@
+{
+  "help": {
+    "description": "Оценить сервер на BotiCord."
+  },
+  "title": "Сервер на Boticord",
+  "failed_to_request": "Что-то пошло не так! Попробуйте еще раз чуть позже."
+}

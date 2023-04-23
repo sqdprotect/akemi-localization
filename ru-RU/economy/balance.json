@@ -1,0 +1,40 @@
+{
+  "help": {
+    "description": "Посмотреть свой баланс.",
+    "examples": [
+      {
+        "usage": "balance",
+        "description": "Посмотреть баланс участника, который вызвал эту команду."
+      },
+      {
+        "usage": "balance @Monix#6666",
+        "description": "Посмотреть баланс участника Monix#6666."
+      },
+      {
+        "usage": "balance 665661412068294676",
+        "description": "Посмотреть баланс участника с Id 665661412068294676."
+      }
+    ]
+  },
+  "robs": "{emote_thief} Ограбления",
+  "bots_do_not_have_balance": "боты не имеют баланса.",
+  "user_balance": "Баланс участника {user}",
+  "money": "**Наличные:** {money} {currency}",
+  "bank": "**В банке:** {bank} {currency}",
+  "total_balance": "**Общий баланс:** {totalMoney}",
+  "level": "**Уровень:** {level} `[{xp}/{upXP}]`",
+  "bonuses_work": "— Подработка (`{commandName}`)",
+  "bonuses_timely": "— Регулярный бонус (`{commandName}`)",
+  "bonuses_daily": "— Ежедневный бонус (`{commandName}`)",
+  "bonuses_weekly": "— Еженедельный бонус (`{commandName}`)",
+  "bonuses_monthly": "— Ежемесячный бонус (`{commandName}`)",
+  "available_rewards": "Доступные награды",
+  "rob_count": "За все свое время участник совершил {count, plural, one {# ограбление} few {# ограбления} other {# ограблений}}",
+  "rob_stats_success": "— {count, plural, one {# успешное} few {# успешных} other {# успешных}}",
+  "rob_stats_decline": "— {count, plural, one {# провальное} few {# провальных} other {# провальных}}",
+  "rob_stats_arrest": "— {count, plural, one {# арест} few {# ареста} other {# арестов}}",
+  "rob_ban_title": "{emote_ban} Запрет",
+  "rob_ban_description": "Участник не может использовать команды экономики, так как находится под арестом.",
+  "jailbreak_button": "Выйти из тюрьмы",
+  "workers": "Авто-воркеры"
+}

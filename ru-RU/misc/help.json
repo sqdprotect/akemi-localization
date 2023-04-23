@@ -1,0 +1,26 @@
+{
+  "commands_available_list": "Список доступных команд",
+  "categories": [
+    "Административные",
+    "Основные",
+    "Модерация",
+    "Настройка",
+    "Экономика",
+    "Развлечения",
+    "Музыка",
+    "Взаимодействия",
+    "Утилиты"
+  ],
+  "command_information": "Информация о команде {commandName}",
+  "command_aliases": "Псевдонимы",
+  "command_rate_limit": "Время перезарядки: `{time}`",
+  "command_usage": "Использование: `{usage}`",
+  "command_example": "Пример: №{n}",
+  "command_not_found": "не удалось найти такую команду.",
+  "command_bot_perms": "Права бота",
+  "command_user_perms": "Права участника",
+  "required_premium_title": "{emote_boost} Команда для премиум серверов",
+  "required_premium_description": "Чтобы использовать эту команду, на сервере должен быть активный **AkemiPro**.",
+  "moderation_command_title": "{emote_warn} Команда из раздела модерации",
+  "moderation_command_description": "Это команда модерации, доступная участникам сервера при выполнении определенных условий."
+}

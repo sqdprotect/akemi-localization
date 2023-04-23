@@ -4,11 +4,15 @@
   "moderator": "Модератор",
   "administrator": "Администратор",
   "server_owner": "Создатель сервера",
+  "unknown_member": "Неизвестный пользователь",
+  "unknown": "Неизвестно",
   "bot": "Бот",
+  "duration": "Длительность",
   "back": "Назад",
   "enable": "Включить",
   "disable": "Выключить",
   "channels": "Каналы",
   "roles": "Роли",
-  "clear": "Очистить"
+  "clear": "Очистить",
+  "information": "Информация"
 }

@@ -1,0 +1,36 @@
+{
+  "help": {
+    "description": "Управление бонусами.",
+    "examples": [
+      {
+        "description": "Активировать бонусные возможности на сервере."
+      },
+      {
+        "description": "Отозвать пакет AkemiPRO на сервере."
+      },
+      {
+        "description": "Посмотреть список активных серверов с бонусными возможностями."
+      }
+    ]
+  },
+  "bonus_cancelled": "Ваша подписка была заморожена. Если вы считаете, что это ошибка, обратитесь в поддержку.",
+  "bonus_cancelled_title": "{emote_boost} Не удалось получить данные о действующей подписке",
+  "bonus_cancelled_description": "Если вы недавно приобрели подписку, проверьте, выполнили ли вы все условия, указанные на странице Boosty.",
+  "bonus_already_activated": "на этом сервере уже активированы бонусные возможности.",
+  "bonus_limit_reached": "достигнут лимит на активацию бонусных возможностей на серверах.",
+  "bonus_not_found": "не удалось найти действующий AkemiPro.",
+  "bonus_activation_title": "{emote_boost} Активация AkemiPro",
+  "bonus_activation_description": "Вы активировали бонусные возможности на сервере.",
+  "bonus_revoked_title": "{emote_boost} AkemiPro отозван",
+  "bonus_revoked_description": "Бонусные возможности на сервере отозваны.",
+  "subscription_type": "Тип подписки: {subType}",
+  "purchase_date": "Дата покупки",
+  "received_date": "Дата получения",
+  "expiration_date": "Дата окончания",
+  "max_server_activations": "Максимальное количество активаций: {currentAmount}/{max}",
+  "remove_command": "Вы можете удалить AkemiPRO с сервера с помощью команды {prefix}bonus remove",
+  "loading_servers": "{emote_loading} Получение списка серверов...",
+  "server_title": "{emote_boost} Сервер #{n}",
+  "server_id_label": "Id сервера: {id}",
+  "activation_date_label": "Дата активации: {activationDate}"
+}

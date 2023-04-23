@@ -1,0 +1,11 @@
+{
+  "help": {
+    "description": "Узнать текущую задержку бота."
+  },
+  "calculating": "{emote_loading} Вычисление...",
+  "cluster": "Кластер: **{instanceName}** ({id}/{total})",
+  "shards": "Сегменты: [ {shard_list} ]",
+  "latency": "— Задержка: {latency}ms",
+  "command_reply": "— Обработка команд: {latency}ms",
+  "database": "— База данных: {latency}ms"
+}

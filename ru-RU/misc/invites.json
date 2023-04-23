@@ -1,0 +1,19 @@
+{
+  "help": {
+    "description": "Посмотреть статистику отслеживаемых приглашений.",
+    "examples": [
+      {
+        "description": "Посмотреть статистику приглашений участника Monix."
+      }
+    ]
+  },
+  "not_found": "не удалось получить статистику приглашений.",
+  "invites_by": "Приглашения {user}",
+  "invites_total": "Имеет {invites, plural, one {# уникальное приглашение} few {# уникальных приглашения} many {# уникальных приглашений} other {# уникальных приглашений}}.",
+  "statistic": "Статистика",
+  "join": "{emote_join} {tracked, plural, one {# вход} few {# входа} many {# входов} other {# входов}}",
+  "left": "{emote_left} {left, plural, one {# выход} few {# выхода} many {# выходов} other {# выходов}}",
+  "leave": "{emote_leave} {fake, plural, one {# фейк} few {# фейка} many {# фейков} other {# фейков}}",
+  "recently_used_invites": "Недавнее использование приглашений {user}",
+  "no_recently_used_invites": "Нет недавних приглашений."
+}

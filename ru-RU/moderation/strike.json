@@ -14,5 +14,7 @@
     ]
   },
   "targets_not_found": "укажите участников, которым вы хотите выдать предупреждение.",
-  "searching_members": "{emote_loading} Поиск участников..."
+  "searching_members": "{emote_loading} Поиск участников...",
+  "targets": "{count, plural, =1 {Предупрежденный участник} other {Предупрежденные участники}}",
+  "failed_to_strike": "не удалось выдать предупреждения."
 }

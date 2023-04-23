@@ -1,4 +1,12 @@
 {
+  "help": {
+    "description": "Посмотреть список доступных команд.",
+    "examples": [
+      {
+        "description": "Посмотреть информацию о команде ban."
+      }
+    ]
+  },
   "commands_available_list": "Список доступных команд",
   "categories": [
     "Административные",
@@ -12,6 +20,7 @@
     "Утилиты"
   ],
   "command_information": "Информация о команде {commandName}",
+  "command_full_description": "Полное описание",
   "command_aliases": "Псевдонимы",
   "command_rate_limit": "Время перезарядки: `{time}`",
   "command_usage": "Использование: `{usage}`",

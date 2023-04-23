@@ -28,7 +28,7 @@
   "received_date": "Дата получения",
   "expiration_date": "Дата окончания",
   "max_server_activations": "Максимальное количество активаций: {currentAmount}/{max}",
-  "remove_command": "Вы можете удалить AkemiPRO с сервера с помощью команды {prefix}bonus remove",
+  "remove_command": "Вы можете удалить AkemiPro с сервера с помощью команды {prefix}bonus remove",
   "loading_servers": "{emote_loading} Получение списка серверов...",
   "server_title": "{emote_boost} Сервер #{n}",
   "server_id_label": "Id сервера: {id}",
